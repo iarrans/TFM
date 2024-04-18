@@ -29,6 +29,10 @@ public class LightController : MonoBehaviour
                 // Actualizar los puntos del Line Renderer
                 lineRenderer.SetPosition(0, characterAim.position);
                 lineRenderer.SetPosition(1, hitInfo.point);
+                if (hitInfo.transform.gameObject.CompareTag("Mirror"))
+                {
+                    Debug.Log("Mirror impact");
+                }
             }
             else
             {
