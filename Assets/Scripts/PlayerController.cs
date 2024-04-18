@@ -47,8 +47,8 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //if (GameController.instance.isPlaying)
-         Move();
+        Move();
+        LightController.ChangeDirection(transform.position, transform.GetChild(0).GetChild(0).forward);  
     }
 
     void Move()

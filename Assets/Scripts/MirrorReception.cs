@@ -1,66 +1,108 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEditor.PackageManager;
 using UnityEngine;
+
+
+public struct LaserData
+{
+    public readonly Vector3 reflectionposition;
+    public readonly float angle;
+    public readonly bool isActive;
+    public readonly string name;
+
+    public LaserData(Vector3 reflectionposition, float angle, bool isActive, string name)
+    {
+        this.reflectionposition = reflectionposition;
+        this.angle = angle;
+        this.isActive = isActive;
+        this.name = name;
+    }
+}
 
 public class MirrorReception : MonoBehaviour
 {
     public bool ReflectingPlayer1 = false;
-    public Transform player1Reflecter;
-    public Transform player2Reflecter;
+    public GameObject laserPrefab; //lleva un componente laser - es decir, script lightcontroller
     public LineRenderer lineRendererPlayer1;
     public LineRenderer lineRendererPlayer2;
     public LayerMask layerMask;
+    List<LaserData> laserDataList;
+    Dictionary<string, GameObject> LaserByName;
 
-    public void ReflectLightPlayer1(Vector3 reflectionposition, float angle, bool isPositive)
+    private void Awake()
     {
-        //Debug.Log("Angle is " + angle);
-        if(!ReflectingPlayer1) StartCoroutine(LightReflection1(reflectionposition, angle, isPositive));
+        laserDataList = new List<LaserData>();
+        LaserByName = new Dictionary<string, GameObject>();
     }
 
-    private IEnumerator LightReflection1(Vector3 reflectionposition, float angle, bool isPositive)
+    public void ChangeLaserData(LaserData laser)
     {
-        angle = -angle;
-        ReflectingPlayer1 = true;
-        player1Reflecter.position = reflectionposition;
+        bool alreadyAdded = false;
 
-        player1Reflecter.transform.rotation = Quaternion.Euler(0, 180 + angle + transform.rotation.y * Mathf.Rad2Deg, 0);
-
-        //player1Reflecter.transform.rotation = Quaternion.Euler(0, 180 - angle, 0);
-             
-
-        //yield return new WaitForSeconds(0.2f);
-        lineRendererPlayer1.enabled = true;
-
-        Ray ray = new Ray(reflectionposition, player1Reflecter.forward);
-        RaycastHit hitInfo;
-
-
-        if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, layerMask))
+        for (int i = 0; i < laserDataList.Count; i++)
         {
-            // Actualizar los puntos del Line Renderer
-            lineRendererPlayer1.SetPosition(0, reflectionposition);
-            lineRendererPlayer1.SetPosition(1, hitInfo.point);
-
+            if (laserDataList[i].name == laser.name)
+            {
+                laserDataList[i] = laser;
+                alreadyAdded = true;
+                break;
+            }
         }
-        else
+        if (!alreadyAdded)
         {
-            // Si el rayo no golpea nada, mostrar la línea en la dirección del rayo
-            lineRendererPlayer1.SetPosition(0, reflectionposition);
-            lineRendererPlayer1.SetPosition(1, ray.origin + ray.direction * 100f);
+            laserDataList.Add(laser);
+            var laserPref = Instantiate(laserPrefab);
+            LaserByName.Add(laser.name, laserPref);
         }
+    }
 
-        //Reflejo del rayo.
-        player1Reflecter.position = reflectionposition;
+    private void Update()
+    {
+        foreach (LaserData laser in laserDataList)
+        {
+            var laserObject = LaserByName[laser.name].GetComponent<LightController>();
+            if (laser.isActive)
+            {
+                laserObject.lineRenderer.enabled = true;
+                laserObject.lightActive = true;
 
-        while (GameManager.Instance.Player1Light.lightOnMirror){          
-            yield return new WaitForSeconds(0.5f);
+                var angle = -laser.angle;
+                ReflectingPlayer1 = true;          
+                laserObject.transform.position = laser.reflectionposition;
+                laserObject.transform.rotation = Quaternion.Euler(0, 180 + angle + transform.rotation.y * Mathf.Rad2Deg, 0);
+
+                lineRendererPlayer1.enabled = true;
+
+                Ray ray = new Ray(laser.reflectionposition, laserObject.transform.forward);
+                RaycastHit hitInfo;
+
+
+                if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, layerMask))
+                {
+                    // Actualizar los puntos del Line Renderer
+                    lineRendererPlayer1.SetPosition(0, laser.reflectionposition);
+                    lineRendererPlayer1.SetPosition(1, hitInfo.point);
+
+                }
+                else
+                {
+                    // Si el rayo no golpea nada, mostrar la línea en la dirección del rayo
+                    lineRendererPlayer1.SetPosition(0, laser.reflectionposition);
+                    lineRendererPlayer1.SetPosition(1, ray.origin + ray.direction * 100f);
+                }
+
+                //Reflejo del rayo.
+                laserObject.transform.position = laser.reflectionposition;
+            }
+            else
+            {
+                laserObject.lineRenderer.enabled = false;
+                laserObject.GetComponent<LightController>().lightActive = false;                
+            }
         }
-
-        ReflectingPlayer1 = false;
-        lineRendererPlayer1.enabled = false;
-        yield return null;
     }
 }
 

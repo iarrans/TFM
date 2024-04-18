@@ -594,9 +594,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83cdaed38a52984c9309c86057f0013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player1Light: {fileID: 2043024255359606242}
-  Player2Light: {fileID: 6830019199077262261}
-  MirrorLight: {fileID: 6281702344837100394}
 --- !u!4 &1798325036
 Transform:
   m_ObjectHideFlags: 0
@@ -1078,18 +1075,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2043024255359606242 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 499707844417330479, guid: 4c06367df47f2904189dfefde7469a45,
-    type: 3}
-  m_PrefabInstance: {fileID: 2313968349321481793}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bcd9ec4fff982543b09c2fd15d9ef18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2313968349321481793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1291,8 +1276,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReflectingPlayer1: 0
-  player1Reflecter: {fileID: 7485148512390993821}
-  player2Reflecter: {fileID: 8514257021948418144}
+  laserPrefab: {fileID: 8877149307808948628, guid: a62f8f5921a6f374dab52f62d60c2133,
+    type: 3}
   lineRendererPlayer1: {fileID: 1827830159}
   lineRendererPlayer2: {fileID: 1742283438}
   layerMask:
@@ -1429,18 +1414,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17ce0537d86d7be40a7ea16c236d6d1a, type: 3}
---- !u!114 &6830019199077262261 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8957008273948027201, guid: 17ce0537d86d7be40a7ea16c236d6d1a,
-    type: 3}
-  m_PrefabInstance: {fileID: 6735554742346901751}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bcd9ec4fff982543b09c2fd15d9ef18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &6977114329988733407
 Transform:
   m_ObjectHideFlags: 0
@@ -1449,13 +1422,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1571483848751372777}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.33103374, z: -0, w: 0.94361895}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 38.263798, y: 6.7949224, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1696495776}
-  m_LocalEulerAnglesHint: {x: 0, y: 38.663, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &7485148512390993821
 Transform:
   m_ObjectHideFlags: 0
