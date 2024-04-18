@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     public Rigidbody rb;
+    public GameObject CharBody;
     public float speed, senstivity;
     private Vector2 move;
     public float maxForce;
@@ -16,6 +17,12 @@ public class PlayerController : MonoBehaviour
     {
         move = context.ReadValue<Vector2>();
     }
+
+    public void OnRotate(InputAction.CallbackContext context)
+    {
+        CharacterRotate();
+    }
+
 
     public void OnPush(InputAction.CallbackContext context)
     {
@@ -44,17 +51,6 @@ public class PlayerController : MonoBehaviour
         //Target Velocity
         Vector3 currentVelocity = rb.velocity;
 
-        /*
-        if (currentVelocity.x > 0 || currentVelocity.z > 0 || currentVelocity.y > 0)
-        {
-            transform.GetChild(0).GetComponent<Animator>().SetFloat("Speed", 1);
-        }
-        else
-        {
-            transform.GetChild(0).GetComponent<Animator>().SetFloat("Speed", 0);
-        }
-        */
-
         Vector3 targetVelocity = new Vector3(move.x, 0, move.y);
         targetVelocity *= speed;
 
@@ -71,11 +67,15 @@ public class PlayerController : MonoBehaviour
         rb.AddForce(velocityChange, ForceMode.VelocityChange);
     }
     
+    void CharacterRotate()
+    {
+        CharBody.transform.Rotate(0, 15.0f, 0.0f, Space.Self);
+    }
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        //Cursor.lockState = CursorLockMode.Locked;
+
     }
 
 }
