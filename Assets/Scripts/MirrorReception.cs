@@ -25,7 +25,7 @@ public class MirrorReception : MonoBehaviour
         ReflectingPlayer1 = true;
         player1Reflecter.position = reflectionposition;
 
-        player1Reflecter.transform.rotation = Quaternion.Euler(0, 180 + angle, 0);
+        player1Reflecter.transform.rotation = Quaternion.Euler(0, 180 + angle + transform.rotation.y * Mathf.Rad2Deg, 0);
 
         //player1Reflecter.transform.rotation = Quaternion.Euler(0, 180 - angle, 0);
              
