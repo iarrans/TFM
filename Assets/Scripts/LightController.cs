@@ -10,10 +10,12 @@ public class LightController : MonoBehaviour
     public Transform characterAim;
     public LayerMask layerMask;
     public bool lightActive = false;
+    public bool lightOnMirror = false;
+    public int playerNumber;
 
     private void Awake()
     {
-        lineRenderer = GetComponent<LineRenderer>();
+        lineRenderer = characterAim.GetComponent<LineRenderer>();
     }
 
     void Update()
@@ -31,12 +33,15 @@ public class LightController : MonoBehaviour
                 lineRenderer.SetPosition(1, hitInfo.point);
                 if (hitInfo.transform.gameObject.CompareTag("Mirror"))
                 {
-                    Debug.Log("Mirror impact");
+                    lightOnMirror = true;
+                    if (playerNumber == 0) GameManager.Instance.MirrorPlayer1Light(hitInfo.point, Vector3.Angle(hitInfo.normal, ray.direction));
+                    else Debug.Log("Char2 angle = " + Vector3.Angle(hitInfo.normal, ray.direction));
                 }
             }
             else
             {
                 // Si el rayo no golpea nada, mostrar la línea en la dirección del rayo
+                lightOnMirror = false;
                 lineRenderer.SetPosition(0, characterAim.position);
                 lineRenderer.SetPosition(1, ray.origin + ray.direction * 100f);
             }
@@ -44,8 +49,10 @@ public class LightController : MonoBehaviour
         else
         {
             lineRenderer.enabled = false;
-        }      
+            lightOnMirror = false;
+        }     
     }
+    
 }
 
 
