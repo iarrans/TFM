@@ -17,9 +17,9 @@ public class GameManager : MonoBehaviour
         Instance = this;
     }
 
-    public void MirrorPlayer1Light(Vector3 reflectionposition, float angle)
+    public void MirrorPlayer1Light(Vector3 reflectionposition, float angle, bool isPositive)
     {
-        MirrorLight.ReflectLightPlayer1(reflectionposition, angle);
+        MirrorLight.ReflectLightPlayer1(reflectionposition, angle, isPositive);
     }
 
 }

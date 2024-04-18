@@ -75,7 +75,7 @@ public class PlayerController : MonoBehaviour
     
     void CharacterRotate()
     {
-        CharBody.transform.Rotate(0, 15.0f, 0.0f, Space.Self);
+        CharBody.transform.Rotate(0, 5.0f, 0.0f, Space.Self);
     }
 
     private void Awake()

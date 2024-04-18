@@ -34,8 +34,11 @@ public class LightController : MonoBehaviour
                 if (hitInfo.transform.gameObject.CompareTag("Mirror"))
                 {
                     lightOnMirror = true;
-                    if (playerNumber == 0) GameManager.Instance.MirrorPlayer1Light(hitInfo.point, Vector3.Angle(hitInfo.normal, ray.direction));
-                    else Debug.Log("Char2 angle = " + Vector3.Angle(hitInfo.normal, ray.direction));
+                    if (playerNumber == 0) {
+
+                        var angle = Vector3.SignedAngle(hitInfo.normal, ray.direction, Vector3.up);
+                        GameManager.Instance.MirrorPlayer1Light(hitInfo.point, angle, true);
+                    } 
                 }
             }
             else
