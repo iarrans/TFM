@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,8 +11,7 @@ public class PlayerController : MonoBehaviour
     public float speed, senstivity;
     private Vector2 move;
     public float maxForce;
-
-    
+    public LightController LightController;
     
     public void OnMove(InputAction.CallbackContext context)
     {
@@ -31,12 +31,18 @@ public class PlayerController : MonoBehaviour
 
     public void OnEmitLight(InputAction.CallbackContext context)
     {
-        Debug.Log("EmitLight");
+        if (context.performed)
+            LightController.lightActive = true;
+        else if (context.canceled)
+            LightController.lightActive = false;
     }
 
     public void OnReflectLight(InputAction.CallbackContext context)
     {
-        Debug.Log("ReflectLight");
+        if (context.performed)
+            LightController.lightActive = true;
+        else if (context.canceled)
+            LightController.lightActive = false;
     }
 
     private void FixedUpdate()
