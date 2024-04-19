@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEngine.GraphicsBuffer;
 
 public class PlayerController : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class PlayerController : MonoBehaviour
     private Vector2 move;
     public float maxForce;
     public LightController LightController;
+    public PlayerCollissions PlayerCollissions;
+    public int playerNumber;
     
     public void OnMove(InputAction.CallbackContext context)
     {
@@ -26,7 +29,22 @@ public class PlayerController : MonoBehaviour
 
     public void OnPush(InputAction.CallbackContext context)
     {
-        Debug.Log("Push");
+        //HACER DISTINCIÓN DE 3 COLLIDERS: Middle mirror, up mirror y down mirror. Middle mirror solo desplaza. Up/Down mirror rotan.
+        if (PlayerCollissions.isTouchingMirror)
+        {
+            var step = speed * Time.deltaTime; // calculate distance to move
+            Vector3 currentMirrorPos = PlayerCollissions.currentMirror.transform.position;
+            if (playerNumber == 1)
+            {
+                //mover a -Z
+                PlayerCollissions.currentMirror.transform.position = new Vector3(currentMirrorPos.x, currentMirrorPos.y, currentMirrorPos.z - 0.2f);
+            }
+            else if (playerNumber == 0)
+            {
+                //mover a +Z
+                PlayerCollissions.currentMirror.transform.position = new Vector3(currentMirrorPos.x, currentMirrorPos.y, currentMirrorPos.z + 0.2f);
+            }
+        }
     }
 
     public void OnEmitLight(InputAction.CallbackContext context)
@@ -81,6 +99,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        PlayerCollissions = GetComponent<PlayerCollissions>();
     }
 
 }

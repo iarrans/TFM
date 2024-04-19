@@ -13,6 +13,7 @@ public struct LaserData
     public readonly bool isActive;
     public readonly string name;
 
+    //AÑADIR ATRIBUTO PLAYER para saber quién lanzó el rayo y, en función de eso, si se pueden desbloquear cosas o cómo debe reflejar el rayo
     public LaserData(Vector3 reflectionposition, float angle, bool isActive, string name)
     {
         this.reflectionposition = reflectionposition;
@@ -72,7 +73,10 @@ public class MirrorReception : MonoBehaviour
                 var angle = -laser.angle;
                 ReflectingPlayer1 = true;          
                 laserObject.transform.position = laser.reflectionposition;
+                //SI JUGADOR 1
                 laserObject.transform.rotation = Quaternion.Euler(0, 180 + angle + transform.rotation.y * Mathf.Rad2Deg, 0);
+                //SI JUGADOR 2
+                //laserObject.transform.rotation = Quaternion.Euler(0, angle + transform.rotation.y * Mathf.Rad2Deg, 0);
 
                 lineRendererPlayer1.enabled = true;
 

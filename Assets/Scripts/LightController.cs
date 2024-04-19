@@ -49,9 +49,23 @@ public class LightController : MonoBehaviour
                         currentMirror = hitInfo.collider.GetComponent<MirrorReception>();
                         currentMirror.ChangeLaserData(new LaserData(hitInfo.point, angle, true, key));
                     } 
+                } else if (hitInfo.transform.gameObject.CompareTag("LightReceptor"))
+                {
+                    if (playerNumber == 1)
+                    {
+                        //TODO Comprobar si se está recibiendo otra luz antes de abrir la puerta.
+
+
+                        //Función abrir puerta.
+                        hitInfo.collider.GetComponent<DoorLightReceptor>().OpenDoor();
+                        Debug.Log("Aaaa");
+                    }
+                    lightOnMirror = false;
+                    DeactivateMirrorReflection();
                 }
                 else
                 {
+                    lightOnMirror = false;
                     DeactivateMirrorReflection();
                 }
             }
