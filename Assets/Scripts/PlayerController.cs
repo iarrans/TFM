@@ -32,17 +32,47 @@ public class PlayerController : MonoBehaviour
         //HACER DISTINCIÓN DE 3 COLLIDERS: Middle mirror, up mirror y down mirror. Middle mirror solo desplaza. Up/Down mirror rotan.
         if (PlayerCollissions.isTouchingMirror)
         {
-            var step = speed * Time.deltaTime; // calculate distance to move
             Vector3 currentMirrorPos = PlayerCollissions.currentMirror.transform.position;
-            if (playerNumber == 1)
+            Vector3 mirrorRotation = PlayerCollissions.currentMirror.transform.eulerAngles;
+            if (!PlayerCollissions.rotateUp && !PlayerCollissions.rotateDown)
             {
-                //mover a -Z
-                PlayerCollissions.currentMirror.transform.position = new Vector3(currentMirrorPos.x, currentMirrorPos.y, currentMirrorPos.z - 0.2f);
+                if (playerNumber == 1)
+                {
+                    //mover a -Z
+                    PlayerCollissions.currentMirror.transform.position = new Vector3(currentMirrorPos.x, currentMirrorPos.y, currentMirrorPos.z - 0.2f);
+                }
+                else if (playerNumber == 0)
+                {
+                    //mover a +Z
+                    PlayerCollissions.currentMirror.transform.position = new Vector3(currentMirrorPos.x, currentMirrorPos.y, currentMirrorPos.z + 0.2f);
+                }
             }
-            else if (playerNumber == 0)
+            //rotación a derecha = -y, rotación a derecha +y
+            else if (PlayerCollissions.rotateUp)
             {
-                //mover a +Z
-                PlayerCollissions.currentMirror.transform.position = new Vector3(currentMirrorPos.x, currentMirrorPos.y, currentMirrorPos.z + 0.2f);
+                if (playerNumber == 1)
+                {
+                    //rotar +Y
+                    PlayerCollissions.currentMirror.transform.rotation = Quaternion.Euler(mirrorRotation + new Vector3(0,- 0.2f,0));
+                }
+                else if (playerNumber == 0)
+                {
+                    //rotar -Y
+                    PlayerCollissions.currentMirror.transform.rotation = Quaternion.Euler(mirrorRotation + new Vector3(0,  0.2f, 0));
+                }
+            }
+            else
+            {
+                if (playerNumber == 1)
+                {
+                    //rotar -Y
+                    PlayerCollissions.currentMirror.transform.rotation = Quaternion.Euler(mirrorRotation + new Vector3(0, 0.2f, 0));
+                }
+                else if (playerNumber == 0)
+                {
+                    //rotar +Y
+                    PlayerCollissions.currentMirror.transform.rotation = Quaternion.Euler(mirrorRotation + new Vector3(0, - 0.2f, 0));
+                }
             }
         }
     }
