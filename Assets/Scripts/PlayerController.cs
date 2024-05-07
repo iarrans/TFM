@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     public float speed, senstivity;
     private Vector2 move;
     public float maxForce;
-    public LightController LightController;
+    public LightComponent LightController;
     public PlayerCollissions PlayerCollissions;
     public int playerNumber;
     

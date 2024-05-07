@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Mirror
+  - LightReceptor
+  - MirrorUp
+  - MirrorDown
   layers:
   - Default
   - TransparentFX

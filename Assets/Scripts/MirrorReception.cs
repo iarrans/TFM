@@ -64,7 +64,7 @@ public class MirrorReception : MonoBehaviour
     {
         foreach (LaserData laser in laserDataList)
         {
-            var laserObject = LaserByName[laser.name].GetComponent<LightController>();
+            var laserObject = LaserByName[laser.name].GetComponent<LightComponent>();
             if (laser.isActive)
             {
                 laserObject.lineRenderer.enabled = true;
@@ -104,7 +104,7 @@ public class MirrorReception : MonoBehaviour
             else
             {
                 laserObject.lineRenderer.enabled = false;
-                laserObject.GetComponent<LightController>().lightActive = false;                
+                laserObject.GetComponent<LightComponent>().lightActive = false;                
             }
         }
     }

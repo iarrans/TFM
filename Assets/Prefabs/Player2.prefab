@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5836340976077683259}
   - component: {fileID: 29368798915910321}
   - component: {fileID: 8957008273948027201}
+  - component: {fileID: 8835965297760401563}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Untagged
@@ -215,7 +216,9 @@ MonoBehaviour:
   speed: 3
   senstivity: 0
   maxForce: 1
-  LightController: {fileID: 8957008273948027201}
+  LightController: {fileID: 0}
+  PlayerCollissions: {fileID: 0}
+  playerNumber: 1
 --- !u!114 &8957008273948027201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,13 +232,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 2758498462009269381}
-  characterAim: {fileID: 6383871217916630727}
   layerMask:
     serializedVersion: 2
     m_Bits: 1
   lightActive: 0
   lightOnMirror: 0
   playerNumber: 1
+--- !u!114 &8835965297760401563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800805051910278678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98dc175c694feff4480f0bc56a801e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTouchingMirror: 0
+  currentMirror: {fileID: 0}
+  rotateUp: 0
+  rotateDown: 0
 --- !u!1 &6240114929613757996
 GameObject:
   m_ObjectHideFlags: 0
