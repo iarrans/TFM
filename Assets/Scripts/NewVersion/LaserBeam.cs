@@ -57,6 +57,12 @@ public class LaserBeam
 
             CastRay(pos, dir, laser);
         }
+        else if (hitInfo.collider.gameObject.CompareTag("LightReceptor"))
+        {
+            hitInfo.collider.GetComponent<DoorLightReceptor>().OpenDoor();
+            laserIndices.Add(hitInfo.point);
+            UpdateLaser();
+        }
         else
         {
             laserIndices.Add(hitInfo.point);
