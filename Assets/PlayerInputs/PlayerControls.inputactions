@@ -24,15 +24,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "EmitLight",
-                    "type": "Button",
-                    "id": "b2cf1cc6-1080-4de7-a118-d30b757ea7c5",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Rotate",
                     "type": "Button",
                     "id": "59dd7f9f-fc09-450e-b6c4-2c2c5927b5da",
@@ -111,17 +102,6 @@
                 },
                 {
                     "name": "",
-                    "id": "6e3851df-aed6-43ab-87f6-964debeeb15f",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "EmitLight",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "edfa9499-07e4-43a3-9146-f6904df49f7c",
                     "path": "<Keyboard>/r",
                     "interactions": "",
@@ -150,15 +130,6 @@
                     "name": "Push",
                     "type": "Button",
                     "id": "4cc64852-32d5-4e76-b023-adee3cc5a0b9",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "ReflectLight",
-                    "type": "Button",
-                    "id": "19292d72-fb1e-4c51-a6b0-9a70c12418d7",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -243,19 +214,8 @@
                 },
                 {
                     "name": "",
-                    "id": "d0779e0d-7776-4644-b307-cb88ca822f4f",
-                    "path": "<Keyboard>/o",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "ReflectLight",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "794bda5e-c003-48b4-81fe-78941dc724dd",
-                    "path": "<Keyboard>/i",
+                    "path": "<Keyboard>/o",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
