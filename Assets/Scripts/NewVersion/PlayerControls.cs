@@ -12,16 +12,20 @@ public class PlayerControls : MonoBehaviour
     private Vector2 move;
     public float maxForce;
     public Transform body;
-    public MirrorType mirrorType;
     
     public void OnMove(InputAction.CallbackContext context)
     {
+        Debug.Log("Move");
         move = context.ReadValue<Vector2>();
     }
 
     public void OnRotate(InputAction.CallbackContext context)
     {
-        CharacterRotate();
+        if (context.performed)
+        {
+            Debug.Log("Rotate");
+            CharacterRotate();
+        }      
     }
 
 
@@ -32,6 +36,8 @@ public class PlayerControls : MonoBehaviour
 
     private void FixedUpdate()
     {
+        rb = GameManager.Instance.currentCharacter.GetComponent<Rigidbody>();
+        body = GameManager.Instance.currentCharacter.transform.GetChild(0);
         Move();
     }
 
@@ -59,20 +65,21 @@ public class PlayerControls : MonoBehaviour
     
     void CharacterRotate()
     {
+        MirrorType RotatingType = GameManager.Instance.currentCharacter.GetComponent<PlayerData>().mirrorType;
         float degreeNumber = 0;
-        switch (mirrorType)
+        switch (RotatingType)
         {
             case MirrorType.TYPE1:
-                degreeNumber = 5;
+                degreeNumber = 90;
                 break;
             case MirrorType.TYPE2:
-                degreeNumber = 22.5f;
+                degreeNumber = 60;
                 break;
             case MirrorType.TYPE3:
-                degreeNumber = 30;
+                degreeNumber = 45;
                 break;
             case MirrorType.TYPE4:
-                degreeNumber = 45;
+                degreeNumber = 30;
                 break;
         }
 
