@@ -855,6 +855,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   door: {fileID: 1539924664}
   doorOpened: 0
+  playerHitCounterNeeded: 4
 --- !u!1 &490524595
 GameObject:
   m_ObjectHideFlags: 0
@@ -4233,7 +4234,6 @@ MonoBehaviour:
   lineRendererPlayer1: {fileID: 1827830159}
   lineRendererPlayer2: {fileID: 1742283438}
   layerMask:
-    serializedVersion: 2
     m_Bits: 0
 --- !u!23 &6363167111271099318
 MeshRenderer:

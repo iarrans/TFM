@@ -5,12 +5,26 @@ using UnityEngine;
 
 public class DoorLightReceptor : MonoBehaviour
 {
+    [SerializeField]
     public GameObject door;
+    [SerializeField]
     public bool doorOpened = false;
+    [SerializeField]
+    int playerHitCounterNeeded;
 
-    public void OpenDoor()
+    int playerHitCounter = 0;
+
+    void TryOpenDoor()
     {
-        door.SetActive(false);
-        doorOpened = true;
+        if(playerHitCounter >= playerHitCounterNeeded){
+            door.SetActive(false);
+            doorOpened = true;
+        }     
+    }
+
+    public void SetPlayerHitCounter(int counter)
+    {
+        playerHitCounter = counter;
+        TryOpenDoor();
     }
 }

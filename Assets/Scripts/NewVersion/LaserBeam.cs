@@ -3,22 +3,22 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class LaserBeam
 {
-
-    Vector3 pos, dir;
     GameObject laserObject;
     LineRenderer laser;
-    List<Vector3> laserIndices = new List<Vector3>();
+    List<Vector3> laserPositions = new List<Vector3>();
+    int playerHitCounter;
 
-   public LaserBeam(Vector3 pos, Vector3 dir, Material material)
+   public LaserBeam(Material material)
     {
         this.laser = new LineRenderer();
         this.laserObject = new GameObject();
         this.laserObject.name = "Laser_Beam";
-        this.pos = pos;
-        this.dir = dir;
+ 
+        this.playerHitCounter = 0;
 
         this.laser = this.laserObject.AddComponent<LineRenderer>();
         this.laser.startWidth = 0.1f;
@@ -27,12 +27,25 @@ public class LaserBeam
         this.laser.startColor = Color.green;
         this.laser.endColor = Color.green;
 
-        CastRay(pos, dir, laser);
+        //StartRay(pos, dir, laser);
     }
 
-    private void CastRay(Vector3 pos, Vector3 dir, LineRenderer laser)
+    public void StartRay(Vector3 pos, Vector3 dir)
     {
-        laserIndices.Add(pos);
+        ClearRay();
+
+        CastRayRecursive(pos, dir, laser);
+    }
+
+    private void ClearRay()
+    {
+        laserPositions.Clear();
+        playerHitCounter = 0;
+    }
+
+    private void CastRayRecursive(Vector3 pos, Vector3 dir, LineRenderer laser)
+    {
+        laserPositions.Add(pos);
 
         Ray ray = new Ray(pos, dir);
         RaycastHit hit;
@@ -43,7 +56,7 @@ public class LaserBeam
         }
         else
         {
-            laserIndices.Add(ray.GetPoint(50));
+            laserPositions.Add(ray.GetPoint(50));
             UpdateLaser();
         }
     }
@@ -55,17 +68,19 @@ public class LaserBeam
             Vector3 pos = hitInfo.point;
             Vector3 dir = Vector3.Reflect(direction, hitInfo.normal);
 
-            CastRay(pos, dir, laser);
+            playerHitCounter++;
+
+            CastRayRecursive(pos, dir, laser);
         }
         else if (hitInfo.collider.gameObject.CompareTag("LightReceptor"))
         {
-            hitInfo.collider.GetComponent<DoorLightReceptor>().OpenDoor();
-            laserIndices.Add(hitInfo.point);
+            hitInfo.collider.GetComponent<DoorLightReceptor>().SetPlayerHitCounter(playerHitCounter);
+            laserPositions.Add(hitInfo.point);
             UpdateLaser();
         }
         else
         {
-            laserIndices.Add(hitInfo.point);
+            laserPositions.Add(hitInfo.point);
             UpdateLaser();
         }
     }
@@ -73,12 +88,13 @@ public class LaserBeam
     private void UpdateLaser()
     {
         int count = 0;
-        laser.positionCount = laserIndices.Count;
+        laser.positionCount = laserPositions.Count;
 
-        foreach (Vector3 idx in laserIndices)
+        foreach (Vector3 idx in laserPositions)
         {
             laser.SetPosition(count, idx);
             count++;
         }
     }
 }
+
