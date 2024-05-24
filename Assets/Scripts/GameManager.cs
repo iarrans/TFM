@@ -42,4 +42,9 @@ public class GameManager : MonoBehaviour
         currentCharacter = characters[3];
     }
 
+    public void LevelFailed()
+    {
+        UIManager.Instance.LevelFailed();
+    }
+
 }
