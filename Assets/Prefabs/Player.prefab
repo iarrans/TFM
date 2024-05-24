@@ -148,6 +148,30 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: ac773d3e-291d-4bfd-81ab-0a3838d31f86
     m_ActionName: Player2/Rotate[/Keyboard/i]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a7660053-0df4-46d5-ae2b-17cf14e42198
+    m_ActionName: Player3/Move[/Keyboard/i,/Keyboard/k,/Keyboard/j,/Keyboard/l]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4f2811b6-95e2-4837-a9c5-4a6ad5404ed5
+    m_ActionName: Player3/Push[/Keyboard/p]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: cccdac47-a268-4b10-8422-283bd0aa23d4
+    m_ActionName: Player3/Rotate[/Keyboard/u]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 15bbf9c6-7d9c-476e-98b2-3021d4562174
+    m_ActionName: Player4/Move[/Keyboard/t,/Keyboard/g,/Keyboard/f,/Keyboard/h]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: cdd4a213-5c47-4c30-bc3a-ff6f4ee3d8ba
+    m_ActionName: Player4/Push[/Keyboard/p]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9bde5ff6-00b6-4c6b-9739-6984a96e81f5
+    m_ActionName: Player4/Rotate[/Keyboard/y]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -169,7 +193,6 @@ MonoBehaviour:
   senstivity: 1
   maxForce: 1
   body: {fileID: 8698820717654831400}
-  mirrorType: 0
 --- !u!1 &7656080391677540702
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,7 +222,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.18, y: 1, z: 0.33999997}
+  m_LocalScale: {x: 2, y: 1, z: 0.33999997}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 981559761581273166}

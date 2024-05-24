@@ -687,7 +687,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7748115cebd752c488d8b522979ed764, type: 2}
+  - {fileID: 2100000, guid: 89c127211f9880447999d39725352480, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -855,6 +855,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   door: {fileID: 1539924664}
   doorOpened: 0
+  playerHitCounterNeeded: 0
 --- !u!1 &490524595
 GameObject:
   m_ObjectHideFlags: 0
@@ -2473,7 +2474,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7748115cebd752c488d8b522979ed764, type: 2}
+  - {fileID: 2100000, guid: 89c127211f9880447999d39725352480, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3653,7 +3654,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7748115cebd752c488d8b522979ed764, type: 2}
+  - {fileID: 2100000, guid: 89c127211f9880447999d39725352480, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3842,7 +3843,7 @@ PrefabInstance:
     - target: {fileID: 4212555999531317361, guid: 58d9851f98dc6cc48891d98894bdd94c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6876
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4212555999531317361, guid: 58d9851f98dc6cc48891d98894bdd94c,
         type: 3}
@@ -4193,7 +4194,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7748115cebd752c488d8b522979ed764, type: 2}
+  - {fileID: 2100000, guid: 89c127211f9880447999d39725352480, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
