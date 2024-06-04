@@ -432,7 +432,7 @@ GameObject:
   m_Component:
   - component: {fileID: 274310039}
   - component: {fileID: 274310041}
-  - component: {fileID: 274310040}
+  - component: {fileID: 274310042}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Untagged
@@ -457,20 +457,6 @@ Transform:
   - {fileID: 1263118693}
   m_Father: {fileID: 1687682004}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &274310040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 274310038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afc8b2d9023730d439a47e220b746051, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerNumber: 2
-  mirrorType: 2
 --- !u!54 &274310041
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -498,6 +484,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &274310042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274310038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bc6d78fad45514d8e29f80a60ee8c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  senstivity: 1
+  move: {x: 0, y: 0}
+  maxForce: 1
+  body: {fileID: 2110281804}
+  playerNumber: 1
+  mirrorType: 2
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1810,7 +1815,6 @@ GameObject:
   - component: {fileID: 979709400}
   - component: {fileID: 979709398}
   - component: {fileID: 979709402}
-  - component: {fileID: 979709401}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1857,32 +1861,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 979709397}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b83cdaed38a52984c9309c86057f0013, type: 3}
+  m_Script: {fileID: 11500000, guid: 176be12739e080d478f0848183ac4264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timeManager: {fileID: 979709398}
-  characters:
+  Player1Characters:
   - {fileID: 1596255049}
-  - {fileID: 274310038}
   - {fileID: 1537747489639148781}
+  Player2Characters:
+  - {fileID: 274310038}
   - {fileID: 1433696707}
-  currentCharacter: {fileID: 0}
---- !u!114 &979709401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 979709397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54bc6d78fad45514d8e29f80a60ee8c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  senstivity: 1
-  maxForce: 1
-  body: {fileID: 0}
+  currentPlayer1Character: {fileID: 0}
+  currentPlayer2Character: {fileID: 0}
+  CurrentPlayer1Index: 0
+  CurrentPlayer2Index: 0
 --- !u!114 &979709402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1911,9 +1903,9 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 979709401}
-        m_TargetAssemblyTypeName: PlayerControls, Assembly-CSharp
-        m_MethodName: OnMove
+      - m_Target: {fileID: 979709400}
+        m_TargetAssemblyTypeName: ControlsManager, Assembly-CSharp
+        m_MethodName: OnMove1
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1927,9 +1919,9 @@ MonoBehaviour:
     m_ActionName: Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 979709401}
-        m_TargetAssemblyTypeName: PlayerControls, Assembly-CSharp
-        m_MethodName: OnRotate
+      - m_Target: {fileID: 979709400}
+        m_TargetAssemblyTypeName: ControlsManager, Assembly-CSharp
+        m_MethodName: OnRotate1
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1943,25 +1935,9 @@ MonoBehaviour:
     m_ActionName: Player/Rotate[/Keyboard/r]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 979709401}
-        m_TargetAssemblyTypeName: PlayerControls, Assembly-CSharp
-        m_MethodName: OnPush
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 16ccbd94-82ae-4cbe-b40d-d23e7ffb7ade
-    m_ActionName: Player/Push[/Keyboard/e]
-  - m_PersistentCalls:
-      m_Calls:
       - m_Target: {fileID: 979709400}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SwitchCharacter1
+        m_MethodName: SwitchCharacterPlayer1
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1977,7 +1953,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 979709400}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SwitchCharacter2
+        m_MethodName: SwitchCharacterPlayer2
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1992,8 +1968,8 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 979709400}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SwitchCharacter3
+        m_TargetAssemblyTypeName: ControlsManager, Assembly-CSharp
+        m_MethodName: OnMove2
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2003,13 +1979,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 25728765-931c-456c-911e-5ad0a8beeaaa
-    m_ActionName: Player/SwitchCharacter3[/Keyboard/3]
+    m_ActionId: 1b58fc21-023f-4b37-b70c-d65d6404cadf
+    m_ActionName: Player/Move2[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 979709400}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SwitchCharacter4
+        m_TargetAssemblyTypeName: ControlsManager, Assembly-CSharp
+        m_MethodName: OnRotate2
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2019,8 +1995,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: d7a71002-206d-4008-97d5-323671e4d49d
-    m_ActionName: Player/SwitchCharacter4[/Keyboard/4]
+    m_ActionId: 882e9ed2-2846-4705-9390-e0a3f3b212f5
+    m_ActionName: Player/Rotate2[/Keyboard/p]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -2207,7 +2183,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1433696708}
   - component: {fileID: 1433696710}
-  - component: {fileID: 1433696709}
+  - component: {fileID: 1433696711}
   m_Layer: 0
   m_Name: Player4
   m_TagString: Untagged
@@ -2232,20 +2208,6 @@ Transform:
   - {fileID: 1854609306}
   m_Father: {fileID: 1687682004}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1433696709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1433696707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afc8b2d9023730d439a47e220b746051, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerNumber: 4
-  mirrorType: 2
 --- !u!54 &1433696710
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2273,6 +2235,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &1433696711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433696707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bc6d78fad45514d8e29f80a60ee8c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  senstivity: 1
+  move: {x: 0, y: 0}
+  maxForce: 1
+  body: {fileID: 381642861}
+  playerNumber: 3
+  mirrorType: 2
 --- !u!1 &1487692025
 GameObject:
   m_ObjectHideFlags: 0
@@ -2778,7 +2759,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1596255050}
   - component: {fileID: 1596255052}
-  - component: {fileID: 1596255051}
+  - component: {fileID: 1596255053}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Untagged
@@ -2803,20 +2784,6 @@ Transform:
   - {fileID: 1721072192}
   m_Father: {fileID: 1687682004}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1596255051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1596255049}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afc8b2d9023730d439a47e220b746051, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerNumber: 1
-  mirrorType: 2
 --- !u!54 &1596255052
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2844,6 +2811,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &1596255053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596255049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bc6d78fad45514d8e29f80a60ee8c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  senstivity: 1
+  move: {x: 0, y: 0}
+  maxForce: 1
+  body: {fileID: 1611791617}
+  playerNumber: 0
+  mirrorType: 2
 --- !u!1 &1611791616
 GameObject:
   m_ObjectHideFlags: 0
@@ -4112,7 +4098,7 @@ GameObject:
   m_Component:
   - component: {fileID: 981559761458242718}
   - component: {fileID: 4525248469280033957}
-  - component: {fileID: 4525248469280033958}
+  - component: {fileID: 4525248469280033959}
   m_Layer: 0
   m_Name: Player3
   m_TagString: Untagged
@@ -4176,7 +4162,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &4525248469280033958
+--- !u!114 &4525248469280033959
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4185,10 +4171,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1537747489639148781}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afc8b2d9023730d439a47e220b746051, type: 3}
+  m_Script: {fileID: 11500000, guid: 54bc6d78fad45514d8e29f80a60ee8c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNumber: 3
+  speed: 5
+  senstivity: 1
+  move: {x: 0, y: 0}
+  maxForce: 1
+  body: {fileID: 8698820717271623160}
+  playerNumber: 2
   mirrorType: 2
 --- !u!23 &5574574522093938460
 MeshRenderer:
