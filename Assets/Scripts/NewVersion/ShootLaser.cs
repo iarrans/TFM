@@ -11,13 +11,12 @@ public class ShootLaser : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        beam = new LaserBeam(material);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Destroy(GameObject.Find("Laser_Beam"));
-        beam = new LaserBeam(gameObject.transform.position, gameObject.transform.right, material);
+        beam.StartRay(gameObject.transform.position, gameObject.transform.right);
     }
 }
