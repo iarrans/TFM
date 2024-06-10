@@ -6,7 +6,7 @@
             "id": "193eede9-e571-49e2-88c3-80a2dc0746b0",
             "actions": [
                 {
-                    "name": "Move",
+                    "name": "Move1",
                     "type": "Value",
                     "id": "18c1c013-8b0f-4ff5-9c99-1e859eb66b42",
                     "expectedControlType": "Vector2",
@@ -15,7 +15,16 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Rotate",
+                    "name": "Move2",
+                    "type": "Value",
+                    "id": "1b58fc21-023f-4b37-b70c-d65d6404cadf",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotate1",
                     "type": "Button",
                     "id": "25f75e5a-e838-4770-b213-065fa1d2190e",
                     "expectedControlType": "Button",
@@ -24,9 +33,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Push",
+                    "name": "Rotate2",
                     "type": "Button",
-                    "id": "16ccbd94-82ae-4cbe-b40d-d23e7ffb7ade",
+                    "id": "882e9ed2-2846-4705-9390-e0a3f3b212f5",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -49,24 +58,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "SwitchCharacter3",
-                    "type": "Button",
-                    "id": "25728765-931c-456c-911e-5ad0a8beeaaa",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "SwitchCharacter4",
-                    "type": "Button",
-                    "id": "d7a71002-206d-4008-97d5-323671e4d49d",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -77,7 +68,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "Move1",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -88,7 +79,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Move",
+                    "action": "Move1",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -99,7 +90,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Move",
+                    "action": "Move1",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -110,7 +101,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Move",
+                    "action": "Move1",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -121,7 +112,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Move",
+                    "action": "Move1",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -132,25 +123,14 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse;Touch",
-                    "action": "Rotate",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "143bb1cd-cc10-4eca-a2f0-a3664166fe91",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Gamepad",
-                    "action": "Push",
+                    "action": "Rotate1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "746de80e-e85e-4e1c-8d3f-ba85ac899b40",
-                    "path": "<Keyboard>/1",
+                    "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -161,7 +141,7 @@
                 {
                     "name": "",
                     "id": "056f09ee-781e-4870-8253-d86421613381",
-                    "path": "<Keyboard>/2",
+                    "path": "<Keyboard>/o",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -170,24 +150,68 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "a858b5a3-c9dc-4e31-9508-9416e4c7e551",
-                    "path": "<Keyboard>/3",
+                    "name": "Arrow Keys",
+                    "id": "e803b5f1-19f2-4b13-aedb-9584de5213c5",
+                    "path": "Dpad",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "SwitchCharacter3",
-                    "isComposite": false,
+                    "action": "Move2",
+                    "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "c1004802-05c1-417b-8d23-b94534021351",
-                    "path": "<Keyboard>/4",
+                    "name": "up",
+                    "id": "8090c7c1-000b-4427-a7e8-0cc643678bc6",
+                    "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
-                    "action": "SwitchCharacter4",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Move2",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "4531318a-8640-4a1f-b69b-ddce0715e135",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Move2",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "df68d046-8b00-4374-8c9e-d6d22dc94507",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Move2",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "a28e66ef-ab62-4be2-95ae-7c5eb118d235",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Move2",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "1d22bd76-5699-4b58-bdb6-ca2c9224d37f",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse;Touch",
+                    "action": "Rotate2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
