@@ -21,6 +21,8 @@ public class ControlsManager : MonoBehaviour
 
     public int CurrentPlayer2Index;
 
+    public LayerMask RaycastLayers;
+
     private void Awake()
     {
         Instance = this;
