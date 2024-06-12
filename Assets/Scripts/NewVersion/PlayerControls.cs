@@ -14,6 +14,7 @@ public class PlayerControls : MonoBehaviour
     public Transform body;
     public int playerNumber;
     public MirrorType mirrorType;
+    public LayerMask playerLayer;
    
 
     private void FixedUpdate()
