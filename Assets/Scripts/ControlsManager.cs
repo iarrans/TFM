@@ -7,8 +7,6 @@ public class ControlsManager : MonoBehaviour
 {
     public static ControlsManager Instance;
 
-    public TimeManager timeManager;
-
     public List<GameObject> Player1Characters;
 
     public List<GameObject> Player2Characters;
@@ -96,14 +94,6 @@ public class ControlsManager : MonoBehaviour
             Debug.Log("Rotate");
             currentPlayer2Character.GetComponent<PlayerControls>().CharacterRotate();
         }
-    }
-
-
-
-
-    public void LevelFailed()
-    {
-        UIManager.Instance.LevelFailed();
     }
 
 }

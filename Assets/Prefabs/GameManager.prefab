@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 615540521711182365}
   - component: {fileID: 204243454629995485}
   - component: {fileID: 6776001512835482735}
+  - component: {fileID: 8628359040699409834}
   - component: {fileID: 907635150701391513}
   m_Layer: 0
   m_Name: GameManager
@@ -46,7 +47,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176be12739e080d478f0848183ac4264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeManager: {fileID: 6776001512835482735}
   Player1Characters:
   - {fileID: 0}
   - {fileID: 0}
@@ -75,6 +75,19 @@ MonoBehaviour:
   textoTiempo: {fileID: 0}
   tiempoTranscurrido: 0
   tiempoRestante: 120
+--- !u!114 &8628359040699409834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7419453051870923025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b0fec86afbbb1d4f9464ba1b73b2189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeManager: {fileID: 6776001512835482735}
 --- !u!114 &907635150701391513
 MonoBehaviour:
   m_ObjectHideFlags: 0
