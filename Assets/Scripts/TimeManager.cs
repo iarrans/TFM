@@ -34,7 +34,7 @@ public class TimeManager : MonoBehaviour
         if (tiempoRestante <= 0 ) 
         {
             textoTiempo.text = "Fin";
-            ControlsManager.Instance.LevelFailed();
+            GameManager.Instance.LevelFailed();
         }
     }
 
