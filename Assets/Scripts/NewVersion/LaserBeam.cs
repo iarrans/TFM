@@ -11,6 +11,7 @@ public class LaserBeam
     LineRenderer laser;
     List<Vector3> laserPositions = new List<Vector3>();
     int playerHitCounter;
+    public LayerMask layers;
 
    public LaserBeam(Material material)
     {
@@ -34,6 +35,8 @@ public class LaserBeam
     {
         ClearRay();
 
+        layers = GameManager.Instance.RaycastLayers;
+
         CastRayRecursive(pos, dir, laser);
     }
 
@@ -50,7 +53,7 @@ public class LaserBeam
         Ray ray = new Ray(pos, dir);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, 50, 1))
+        if (Physics.Raycast(ray, out hit, 50, layers))
         {
             CheckHit(hit, dir, laser);
         }
