@@ -35,7 +35,7 @@ public class LaserBeam
     {
         ClearRay();
 
-        layers = ControlsManager.Instance.RaycastLayers;
+        layers = GameManager.Instance.RaycastLayers;
 
         CastRayRecursive(pos, dir, laser);
     }
