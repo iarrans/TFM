@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class ControlsManager : MonoBehaviour
+public class ControlsManagerLegacy : MonoBehaviour
 {
-    public static ControlsManager Instance;
+    public static ControlsManagerLegacy Instance;
 
     public List<GameObject> Player1Characters;
 

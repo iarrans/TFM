@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
 
     public TimeManager timeManager;
 
+    public LayerMask RaycastLayers;
+
 
     private void Awake()
     {
