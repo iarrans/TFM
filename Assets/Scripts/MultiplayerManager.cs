@@ -62,6 +62,8 @@ public class MultiplayerManager : MonoBehaviour
         playerGO.layer = PlayerLayer;
         playerGO.transform.GetChild(0).gameObject.layer = PlayerLayer;
 
+        spawnPositions[positionIndex].gameObject.SetActive(false);
+
         positionIndex++;
     }
 }
