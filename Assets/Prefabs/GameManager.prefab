@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6776001512835482735}
   - component: {fileID: 8628359040699409834}
   - component: {fileID: 907635150701391513}
+  - component: {fileID: 1301939928281246623}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -67,14 +68,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7419453051870923025}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2cf89e7795e7be40912ebe3e87c2554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textoTiempo: {fileID: 0}
   tiempoTranscurrido: 0
-  tiempoRestante: 120
 --- !u!114 &8628359040699409834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,3 +215,15 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1301939928281246623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7419453051870923025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d60cb14c710956148b3e461d2f2c34c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
