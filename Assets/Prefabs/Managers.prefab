@@ -191,6 +191,8 @@ MonoBehaviour:
   RaycastLayers:
     serializedVersion: 2
     m_Bits: 961
+  scapedChars: 0
+  requiredPlayers: 4
 --- !u!114 &4942218801491531370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,5 +205,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2cf89e7795e7be40912ebe3e87c2554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoTiempo: {fileID: 0}
   tiempoTranscurrido: 0

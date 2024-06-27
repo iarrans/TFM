@@ -8,6 +8,7 @@ TagManager:
   - LightReceptor
   - MirrorUp
   - MirrorDown
+  - ExitTrigger
   layers:
   - Default
   - TransparentFX

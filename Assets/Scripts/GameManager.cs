@@ -11,14 +11,23 @@ public class GameManager : MonoBehaviour
 
     public LayerMask RaycastLayers;
 
+    public int scapedChars;
+
+    public int requiredPlayers = 4;
+
 
     private void Awake()
     {
         Instance = this;
+        scapedChars = 0;
     }
 
-    public void LevelFailed()
+    public void CheckScaped()
     {
-        UIManager.Instance.LevelFailed();
+        scapedChars++;
+        if (scapedChars == requiredPlayers)
+        {
+            UIManager.Instance.ShowVictoryScreen();
+        }
     }
 }
