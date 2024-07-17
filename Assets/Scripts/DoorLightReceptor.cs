@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class DoorLightReceptor : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class DoorLightReceptor : MonoBehaviour
         if(playerHitCounter >= playerHitCounterNeeded){
             door.SetActive(false);
             doorOpened = true;
+            MultiplayerManager.Instance.gameObject.GetComponent<PlayerInputManager>().DisableJoining();
         }     
     }
 
