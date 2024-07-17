@@ -249,12 +249,9 @@ MonoBehaviour:
   senstivity: 1
   move: {x: 0, y: 0}
   maxForce: 1
-  body: {fileID: 122721108536414400}
+  body: {fileID: 3705145311479839872}
   playerNumber: 0
   mirrorType: 2
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!1 &8989446908623380675
 GameObject:
   m_ObjectHideFlags: 0
