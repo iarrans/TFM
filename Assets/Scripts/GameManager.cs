@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
 
     public int requiredPlayers = 4;
 
+    public bool playingLevel = true;
+
 
     private void Awake()
     {

@@ -40,7 +40,7 @@ public class MultiplayerManager : MonoBehaviour
 
         //Se configuran las layers correctamente para los colliders exclusivos de jugadores
         int PlayerLayer = LayerMask.NameToLayer("Default");
-        switch (positionIndex)
+        /*switch (positionIndex)
         {
             case 0:
                 PlayerLayer = LayerMask.NameToLayer("PlayerLayer1");
@@ -58,6 +58,7 @@ public class MultiplayerManager : MonoBehaviour
                 print("Incorrect player index.");
                 break;
         }
+        */
 
         playerGO.layer = PlayerLayer;
         playerGO.transform.GetChild(0).gameObject.layer = PlayerLayer;

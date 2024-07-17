@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5686334282904239832}
   - component: {fileID: 3721974358509117607}
   - component: {fileID: 1131280176386499907}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: PlayerMirror1
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -289,7 +289,7 @@ GameObject:
   - component: {fileID: 8997350558700786099}
   - component: {fileID: 3935090279300623477}
   - component: {fileID: 4205191132629746994}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ControllerPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
