@@ -9,11 +9,12 @@ TagManager:
   - MirrorUp
   - MirrorDown
   - ExitTrigger
+  - PushableObstacle
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - RestrictedFloor
   - Water
   - UI
   - PlayerLayer1
