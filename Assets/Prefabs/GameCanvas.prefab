@@ -256,7 +256,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4832059220267299732}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: RestartScene
+        m_MethodName: LoadNextLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

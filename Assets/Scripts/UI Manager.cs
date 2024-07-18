@@ -75,4 +75,9 @@ public class UIManager : MonoBehaviour
         }
 
     }
+
+    public void LoadNextLevel()
+    {
+      GameManager.Instance.transform.GetChild(0).GetComponent<LevelManager>().LoadNextScene();     
+    }
 }
