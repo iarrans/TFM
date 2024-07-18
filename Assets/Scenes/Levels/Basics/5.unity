@@ -1000,6 +1000,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 969643210}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1116458188 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6848267504865755898, guid: c3686a6783f66cd4bb165e831c69ae8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1482103683}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1133911703
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1668,6 +1674,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2885516415068811407, guid: a12a2a631b776ef4ca0874b1de648c66,
+        type: 3}
+      propertyPath: winningCamPosition
+      value: 
+      objectReference: {fileID: 1116458188}
     - target: {fileID: 3817070733024106530, guid: a12a2a631b776ef4ca0874b1de648c66,
         type: 3}
       propertyPath: currentLevel

@@ -1234,6 +1234,11 @@ PrefabInstance:
       propertyPath: requiredPlayers
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 2885516415068811407, guid: a12a2a631b776ef4ca0874b1de648c66,
+        type: 3}
+      propertyPath: winningCamPosition
+      value: 
+      objectReference: {fileID: 1482103685}
     - target: {fileID: 3817070733024106530, guid: a12a2a631b776ef4ca0874b1de648c66,
         type: 3}
       propertyPath: currentLevel
@@ -1470,6 +1475,12 @@ PrefabInstance:
 --- !u!1 &1482103684 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3534642737032960435, guid: c3686a6783f66cd4bb165e831c69ae8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1482103683}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1482103685 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6848267504865755898, guid: c3686a6783f66cd4bb165e831c69ae8a,
     type: 3}
   m_PrefabInstance: {fileID: 1482103683}
   m_PrefabAsset: {fileID: 0}
