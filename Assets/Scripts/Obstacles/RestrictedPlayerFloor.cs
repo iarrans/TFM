@@ -18,7 +18,7 @@ public class RestrictedPlayerFloor : MonoBehaviour
     private void Start()
     {
         defaultyer = LayerMask.NameToLayer("Default");
-        restrictedFloorLayer = LayerMask.NameToLayer("RestrictedFloor");
+        restrictedFloorLayer = LayerMask.NameToLayer("RestrictedFloorPlayer");
     }
     public void OnTriggerEnter(Collider collision)
     {
@@ -40,6 +40,10 @@ public class RestrictedPlayerFloor : MonoBehaviour
                 }
            
             }
+            if (playersStanding.Count >= numberOfPlayers)
+            {
+                transform.parent.GetComponent<Renderer>().material = fullFloorMaterial;
+            }
         }
     }
 
@@ -58,6 +62,10 @@ public class RestrictedPlayerFloor : MonoBehaviour
                 collision.transform.gameObject.layer = defaultyer;
                 playersStanding.Remove(collision.transform.gameObject);
             }
+            if (playersStanding.Count < numberOfPlayers)
+            {
+                transform.parent.GetComponent<Renderer>().material = emptyFloorMaterial;
+            }         
         }
     }
 
