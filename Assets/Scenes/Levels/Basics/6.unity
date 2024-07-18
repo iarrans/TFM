@@ -710,9 +710,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 911d1122a086c1642bf265673c064e9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 0}
+  door: {fileID: 1482103684}
   doorOpened: 0
-  playerHitCounterNeeded: 2
+  playerHitCounterNeeded: 4
 --- !u!1001 &524334356
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1232,7 +1232,7 @@ PrefabInstance:
     - target: {fileID: 2885516415068811407, guid: a12a2a631b776ef4ca0874b1de648c66,
         type: 3}
       propertyPath: requiredPlayers
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3817070733024106530, guid: a12a2a631b776ef4ca0874b1de648c66,
         type: 3}
@@ -1467,6 +1467,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: c3686a6783f66cd4bb165e831c69ae8a, type: 3}
+--- !u!1 &1482103684 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3534642737032960435, guid: c3686a6783f66cd4bb165e831c69ae8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1482103683}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1609600454 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1917514892741304829, guid: c3686a6783f66cd4bb165e831c69ae8a,

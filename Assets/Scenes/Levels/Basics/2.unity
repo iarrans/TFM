@@ -573,7 +573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 911d1122a086c1642bf265673c064e9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 0}
+  door: {fileID: 1482103688}
   doorOpened: 0
   playerHitCounterNeeded: 4
 --- !u!1 &832575517
@@ -1091,6 +1091,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1482103683}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1482103688 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3534642737032960435, guid: c3686a6783f66cd4bb165e831c69ae8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1482103683}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1581692495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1269,7 +1275,7 @@ PrefabInstance:
     - target: {fileID: 4212555999531317361, guid: 58d9851f98dc6cc48891d98894bdd94c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 41.43
+      value: 42.95
       objectReference: {fileID: 0}
     - target: {fileID: 4212555999531317361, guid: 58d9851f98dc6cc48891d98894bdd94c,
         type: 3}

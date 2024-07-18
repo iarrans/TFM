@@ -485,7 +485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 911d1122a086c1642bf265673c064e9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 0}
+  door: {fileID: 1589321285}
   doorOpened: 0
   playerHitCounterNeeded: 4
 --- !u!1 &832575517
@@ -672,7 +672,7 @@ MonoBehaviour:
   waypoints:
   - {fileID: 2072060845}
   - {fileID: 2072060844}
-  speed: 5
+  speed: 3
 --- !u!1001 &1589321284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -757,6 +757,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: c3686a6783f66cd4bb165e831c69ae8a, type: 3}
+--- !u!1 &1589321285 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3534642737032960435, guid: c3686a6783f66cd4bb165e831c69ae8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1589321284}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2072060843
 PrefabInstance:
   m_ObjectHideFlags: 0
