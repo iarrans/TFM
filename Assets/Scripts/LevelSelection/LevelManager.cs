@@ -11,9 +11,11 @@ public class LevelManager : MonoBehaviour
 
     public void LoadNextScene()
     {
-        if (currentLevel.levelOrder + 1 < levels.Count)
+        int levelIndex = levels.IndexOf(currentLevel);
+
+        if (levelIndex + 1 < levels.Count)
         {
-            SceneManager.LoadScene(levels[currentLevel.levelOrder + 1].Levelscene);
+            SceneManager.LoadScene(levels[levelIndex + 1].Levelscene);
         }
         else
         {

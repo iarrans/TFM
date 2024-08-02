@@ -825,6 +825,30 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: c3686a6783f66cd4bb165e831c69ae8a, type: 3}
+--- !u!4 &1589321285 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8338662724007505128, guid: c3686a6783f66cd4bb165e831c69ae8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1589321284}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1589321286 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1917514892741304829, guid: c3686a6783f66cd4bb165e831c69ae8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1589321284}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1589321287 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4704398437857969549, guid: c3686a6783f66cd4bb165e831c69ae8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1589321284}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1589321288 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2641251696421384322, guid: c3686a6783f66cd4bb165e831c69ae8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1589321284}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1895317945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1242,22 +1266,22 @@ PrefabInstance:
         type: 3}
       propertyPath: spawnPositions.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1589321288}
     - target: {fileID: 788161968136323369, guid: a12a2a631b776ef4ca0874b1de648c66,
         type: 3}
       propertyPath: spawnPositions.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1589321287}
     - target: {fileID: 788161968136323369, guid: a12a2a631b776ef4ca0874b1de648c66,
         type: 3}
       propertyPath: spawnPositions.Array.data[2]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1589321286}
     - target: {fileID: 788161968136323369, guid: a12a2a631b776ef4ca0874b1de648c66,
         type: 3}
       propertyPath: spawnPositions.Array.data[3]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1589321285}
     - target: {fileID: 919782141028195488, guid: a12a2a631b776ef4ca0874b1de648c66,
         type: 3}
       propertyPath: victoryScreen

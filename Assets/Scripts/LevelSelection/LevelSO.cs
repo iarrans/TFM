@@ -8,8 +8,6 @@ public class LevelSO : ScriptableObject
 {
     public int Levelscene;
 
-    public int levelOrder;
-
     public string levelName;
 
     public Sprite levelMiniature;

@@ -228,7 +228,7 @@ PrefabInstance:
     - target: {fileID: 4277683658175901871, guid: 67b9b9604c030f844a530c2f16d34de6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.809906
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 4277683658175901871, guid: 67b9b9604c030f844a530c2f16d34de6,
         type: 3}
@@ -275,6 +275,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PushableObstacle (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5690204595530212832, guid: 67b9b9604c030f844a530c2f16d34de6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -298,6 +303,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ButtonObstacle (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105695985488426205, guid: f5f2ee8fb44df804697a208b973a7d5e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.6177535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105695985488426205, guid: f5f2ee8fb44df804697a208b973a7d5e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.355
       objectReference: {fileID: 0}
     - target: {fileID: 4884622673485517615, guid: f5f2ee8fb44df804697a208b973a7d5e,
         type: 3}
@@ -640,7 +655,7 @@ PrefabInstance:
     - target: {fileID: 4277683658175901871, guid: 67b9b9604c030f844a530c2f16d34de6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.809906
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 4277683658175901871, guid: 67b9b9604c030f844a530c2f16d34de6,
         type: 3}
@@ -686,6 +701,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PushableObstacle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5690204595530212832, guid: 67b9b9604c030f844a530c2f16d34de6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
