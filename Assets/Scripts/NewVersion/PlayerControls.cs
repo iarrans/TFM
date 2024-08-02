@@ -76,6 +76,15 @@ public class PlayerControls : MonoBehaviour
         }
     }
 
+    public void OnPause(InputAction.CallbackContext context)
+    {
+        if (UIManager.Instance != null)
+        {
+            if(!UIManager.Instance.pauseScreen.activeSelf) UIManager.Instance.PauseGameplay();
+            else UIManager.Instance.RestoreGameplay();
+        }
+    }
+
     public void CharacterRotate()
     {
         float degreeNumber = 0;

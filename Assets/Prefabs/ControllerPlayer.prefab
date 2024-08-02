@@ -371,6 +371,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 59dd7f9f-fc09-450e-b6c4-2c2c5927b5da
     m_ActionName: Player/Rotate[/DualShock4GamepadHID/buttonSouth,/Keyboard/r]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8997350558700786099}
+        m_TargetAssemblyTypeName: PlayerControls, Assembly-CSharp
+        m_MethodName: OnPause
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d87c17e1-d683-4def-8aa6-a3f1ac91e187
+    m_ActionName: Player/Pause[/Keyboard/space,/DualShock4GamepadHID/start]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

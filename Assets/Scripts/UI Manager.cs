@@ -4,18 +4,23 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 using TMPro;
+using Unity.VisualScripting;
 public class UIManager : MonoBehaviour
 {
     // Start is called before the first frame update
 
     public static UIManager Instance;
 
+    //Victory Screen Attributes
     public GameObject victoryScreen;
 
     public TextMeshProUGUI vicScreenEscapedText;
     public TextMeshProUGUI vicScreenTimeResultText;
 
     public List<GameObject> vicScreenButtons;
+
+    //Pause Screen Attributes
+    public GameObject pauseScreen;
     
 
     private void Awake()
@@ -26,6 +31,7 @@ public class UIManager : MonoBehaviour
 
     public void RestartScene()
     {
+        Time.timeScale = 1;
         int scene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(scene);
     }
@@ -80,4 +86,24 @@ public class UIManager : MonoBehaviour
     {
       GameManager.Instance.transform.GetChild(0).GetComponent<LevelManager>().LoadNextScene();     
     }
+
+    //PAUSE SCREEN METHODS
+    public void PauseGameplay()
+    {
+        Time.timeScale = 0;
+        pauseScreen.gameObject.SetActive(true);
+    }
+
+    public void RestoreGameplay()
+    {
+        Time.timeScale = 1;
+        pauseScreen.gameObject.SetActive(false);
+    }
+
+    public void LoadMainMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("MainMenu");
+    }
+
 }
