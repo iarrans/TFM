@@ -8,7 +8,7 @@ public class LevelSO : ScriptableObject
 {
     public int Levelscene;
 
-    public int levelID;
+    public int levelOrder;
 
     public string levelName;
 

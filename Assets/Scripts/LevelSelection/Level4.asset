@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Level4
   m_EditorClassIdentifier: 
   Levelscene: 7
-  levelID: 4
+  levelOrder: 4
   levelName: Level 4
-  levelMiniature: {fileID: 0}
+  levelMiniature: {fileID: 21300000, guid: 5dc25a45659976f408e0d26e680e7cb5, type: 3}
