@@ -8,17 +8,19 @@ TagManager:
   - LightReceptor
   - MirrorUp
   - MirrorDown
+  - ExitTrigger
+  - PushableObstacle
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - RestrictedFloor
   - Water
   - UI
-  - PlayerLayer1
-  - PlayerLayer2
-  - PlayerLayer3
-  - PlayerLayer4
+  - RestrictedFloorPlayer
+  - ObstaclesRestrictedFloor
+  - 
+  - 
   - 
   - 
   - 

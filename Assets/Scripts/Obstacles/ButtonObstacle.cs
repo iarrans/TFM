@@ -1,0 +1,32 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ButtonObstacle : MonoBehaviour
+{
+    public GameObject obstacle;
+    public List<GameObject> objectStanding;
+    public bool isSwitchButton;
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        Rigidbody wightedObject = other.gameObject.GetComponent<Rigidbody>();
+        if (wightedObject != null || other.CompareTag("Player"))
+        {
+            obstacle.SetActive(false);
+            objectStanding.Add(other.gameObject);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        Rigidbody wightedObject = other.gameObject.GetComponent<Rigidbody>();
+        if ((wightedObject != null || other.CompareTag("Player")) && isSwitchButton)
+        {
+            //Doble check para evitar que, si hay dos en el área, con irse uno se despulse
+            if (objectStanding.Count == 1) obstacle.SetActive(true);
+            objectStanding.Remove(other.gameObject);
+                       
+        }
+    }
+}
