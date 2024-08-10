@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
         if (scapedChars == requiredPlayers)
         {
             UIManager.Instance.ShowVictoryScreen();
+            AudioManager.instance.PlayVictoryMusic();
             Camera.main.transform.DOMove(winningCamPosition.position,3);
             Camera.main.transform.DORotate(winningCamPosition.rotation.eulerAngles, 3);
         }

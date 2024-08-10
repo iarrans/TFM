@@ -20,6 +20,7 @@ public class DoorLightReceptor : MonoBehaviour
         if(playerHitCounter >= playerHitCounterNeeded){
             door.SetActive(false);
             doorOpened = true;
+            AudioManager.instance.PlayOpenDoorsMusic();
             MultiplayerManager.Instance.gameObject.GetComponent<PlayerInputManager>().DisableJoining();
         }     
     }
