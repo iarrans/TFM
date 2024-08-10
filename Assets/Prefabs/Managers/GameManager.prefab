@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 615540521711182365}
-  - component: {fileID: 204243454629995485}
   - component: {fileID: 6776001512835482735}
   - component: {fileID: 8628359040699409834}
   - component: {fileID: 907635150701391513}
@@ -36,31 +35,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &204243454629995485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7419453051870923025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 176be12739e080d478f0848183ac4264, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player1Characters:
-  - {fileID: 0}
-  - {fileID: 0}
-  Player2Characters:
-  - {fileID: 0}
-  - {fileID: 0}
-  currentPlayer1Character: {fileID: 0}
-  currentPlayer2Character: {fileID: 0}
-  CurrentPlayer1Index: 0
-  CurrentPlayer2Index: 0
-  RaycastLayers:
-    serializedVersion: 2
-    m_Bits: 961
 --- !u!114 &6776001512835482735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,7 +47,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2cf89e7795e7be40912ebe3e87c2554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoTiempo: {fileID: 0}
   tiempoTranscurrido: 0
 --- !u!114 &8628359040699409834
 MonoBehaviour:
@@ -88,6 +61,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeManager: {fileID: 6776001512835482735}
+  RaycastLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  scapedChars: 0
+  requiredPlayers: 4
+  playingLevel: 1
+  winningCamPosition: {fileID: 0}
 --- !u!114 &907635150701391513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,7 +96,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 204243454629995485}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ControlsManager, Assembly-CSharp
         m_MethodName: OnMove1
         m_Mode: 0
@@ -132,7 +112,7 @@ MonoBehaviour:
     m_ActionName: Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 204243454629995485}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ControlsManager, Assembly-CSharp
         m_MethodName: OnRotate1
         m_Mode: 0
@@ -148,7 +128,7 @@ MonoBehaviour:
     m_ActionName: Player/Rotate[/Keyboard/r]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 204243454629995485}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: SwitchCharacterPlayer1
         m_Mode: 0
@@ -164,7 +144,7 @@ MonoBehaviour:
     m_ActionName: Player/SwitchCharacter1[/Keyboard/1]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 204243454629995485}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: SwitchCharacterPlayer2
         m_Mode: 0
@@ -180,7 +160,7 @@ MonoBehaviour:
     m_ActionName: Player/SwitchCharacter2[/Keyboard/2]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 204243454629995485}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ControlsManager, Assembly-CSharp
         m_MethodName: OnMove2
         m_Mode: 0
@@ -196,7 +176,7 @@ MonoBehaviour:
     m_ActionName: Player/Move2[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 204243454629995485}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ControlsManager, Assembly-CSharp
         m_MethodName: OnRotate2
         m_Mode: 0

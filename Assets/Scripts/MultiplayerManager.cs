@@ -14,6 +14,8 @@ public class MultiplayerManager : MonoBehaviour
 
     public List<GameObject> players;
 
+    public AudioClip PlayerJoinedSound;
+
     private void Awake()
     {
         Instance = this;
@@ -66,5 +68,7 @@ public class MultiplayerManager : MonoBehaviour
         spawnPositions[positionIndex].gameObject.SetActive(false);
 
         positionIndex++;
+
+        AudioManager.instance.PlaySFXClip(PlayerJoinedSound);
     }
 }

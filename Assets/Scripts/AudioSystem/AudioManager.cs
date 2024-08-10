@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
@@ -58,7 +60,7 @@ public class AudioManager : MonoBehaviour
     public void PlaySFXClip(AudioClip audioclip)
     {
         //Spawn del GameObject con efecto de sonido. Se crea como hijo del manager del sonido
-        AudioSource audioSourceSFX = Instantiate(SFXPrefab, transform);
+        AudioSource audioSourceSFX = transform.AddComponent<AudioSource>();
 
         //asignar clip de audio
         audioSourceSFX.clip = audioclip;
@@ -71,8 +73,10 @@ public class AudioManager : MonoBehaviour
 
         //eliminar objeto al acabar el sonido
         float clipLenght = audioSourceSFX.clip.length;
+        
         Destroy(audioSourceSFX, clipLenght);
 
     }
+
 }
 

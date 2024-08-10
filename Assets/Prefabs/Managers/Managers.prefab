@@ -51,6 +51,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   players: []
+  PlayerJoinedSound: {fileID: 8300000, guid: d1e7b8a733d42454f98df39173bbfe84, type: 3}
 --- !u!114 &6883103928228858501
 MonoBehaviour:
   m_ObjectHideFlags: 0

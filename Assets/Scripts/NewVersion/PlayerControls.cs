@@ -17,6 +17,8 @@ public class PlayerControls : MonoBehaviour
     public int playerNumber;
     public MirrorType mirrorType;
 
+    public AudioClip rotationSound;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -72,6 +74,7 @@ public class PlayerControls : MonoBehaviour
         if (context.performed)
         {
             Debug.Log("Rotate");
+            AudioManager.instance.PlaySFXClip(rotationSound);
             CharacterRotate();
         }
     }
