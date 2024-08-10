@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8998480886228673240}
   - component: {fileID: 3439602072335158506}
   - component: {fileID: 2205729846188386610}
+  - component: {fileID: 8027680213903437324}
   m_Layer: 0
   m_Name: LightReception
   m_TagString: Untagged
@@ -105,3 +106,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8027680213903437324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6840342928842739306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 911d1122a086c1642bf265673c064e9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  doorOpened: 0
+  playerHitCounterNeeded: 4
+  doorOpeningSound: {fileID: 8300000, guid: 3a5276c6fb788134a8f12bd05c40c31d, type: 3}

@@ -12,6 +12,8 @@ public class DoorLightReceptor : MonoBehaviour
     public bool doorOpened = false;
     [SerializeField]
     int playerHitCounterNeeded;
+    [SerializeField]
+    AudioClip doorOpeningSound;
 
     int playerHitCounter = 0;
 
@@ -20,6 +22,7 @@ public class DoorLightReceptor : MonoBehaviour
         if(playerHitCounter >= playerHitCounterNeeded){
             door.SetActive(false);
             doorOpened = true;
+            AudioManager.instance.PlaySFXClip(doorOpeningSound);
             AudioManager.instance.PlayOpenDoorsMusic();
             MultiplayerManager.Instance.gameObject.GetComponent<PlayerInputManager>().DisableJoining();
         }     
