@@ -15,6 +15,8 @@ public class RestrictedPlayerFloor : MonoBehaviour
     //Number of players that can stay on floor at the same time
     public int numberOfPlayers = 1;
 
+    public AudioClip fullFloorSFX;
+
     private void Start()
     {
         defaultyer = LayerMask.NameToLayer("Default");
@@ -43,6 +45,7 @@ public class RestrictedPlayerFloor : MonoBehaviour
             if (playersStanding.Count >= numberOfPlayers)
             {
                 transform.parent.GetComponent<Renderer>().material = fullFloorMaterial;
+                AudioManager.instance.PlaySFXClip(fullFloorSFX);
             }
         }
     }
@@ -65,6 +68,7 @@ public class RestrictedPlayerFloor : MonoBehaviour
             if (playersStanding.Count < numberOfPlayers)
             {
                 transform.parent.GetComponent<Renderer>().material = emptyFloorMaterial;
+                AudioManager.instance.PlaySFXClip(fullFloorSFX);
             }         
         }
     }

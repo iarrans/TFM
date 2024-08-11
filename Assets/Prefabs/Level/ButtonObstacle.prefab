@@ -259,3 +259,5 @@ MonoBehaviour:
   obstacle: {fileID: 2374305099527373098}
   objectStanding: []
   isSwitchButton: 1
+  buttonPressedSFX: {fileID: 8300000, guid: 401439d1977df9c45b3737050c439718, type: 3}
+  buttonReleasedSFX: {fileID: 8300000, guid: 52f8a4ef11a3eab4391be85ba40814a6, type: 3}

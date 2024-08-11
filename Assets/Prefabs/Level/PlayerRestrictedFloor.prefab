@@ -231,3 +231,4 @@ MonoBehaviour:
   defaultyer: 0
   restrictedFloorLayer: 0
   numberOfPlayers: 1
+  fullFloorSFX: {fileID: 8300000, guid: d7bdd97cc485632408f2fbcde1bab894, type: 3}
