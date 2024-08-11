@@ -5,6 +5,8 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEditor.Experimental.GraphView.GraphView;
+using static UnityEditor.PlayerSettings;
 using static UnityEngine.GraphicsBuffer;
 
 public class PlayerControls : MonoBehaviour
@@ -18,6 +20,7 @@ public class PlayerControls : MonoBehaviour
     public MirrorType mirrorType;
 
     public AudioClip rotationSound;
+    public LayerMask wallLayer;
 
     private void Awake()
     {

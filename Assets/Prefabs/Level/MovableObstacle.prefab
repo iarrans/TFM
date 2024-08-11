@@ -155,6 +155,7 @@ MonoBehaviour:
   - {fileID: 3860377184984637417}
   - {fileID: 2932839330012312589}
   speed: 5
+  Axis: 
 --- !u!1 &4855713995433250945
 GameObject:
   m_ObjectHideFlags: 0

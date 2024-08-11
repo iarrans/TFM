@@ -412,6 +412,9 @@ MonoBehaviour:
   playerNumber: 0
   mirrorType: 2
   rotationSound: {fileID: 8300000, guid: b89fcd7b0518f844d9291432412380b7, type: 3}
+  WallLayers:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!54 &3935090279300623477
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -438,7 +441,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &4205191132629746994
 MonoBehaviour:
   m_ObjectHideFlags: 0

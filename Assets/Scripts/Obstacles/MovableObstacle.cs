@@ -19,6 +19,21 @@ public class MovableObstacle : MonoBehaviour
         Vector3 direction = targetWaypoint.position - transform.position;
         transform.Translate(direction.normalized * speed * Time.deltaTime, Space.World);
 
+        //Cond: si raycast (< tamanyo de pj) da con pared en alguna dir y hay pj en el trigger, se cambia al siguiente para evitar empujarlo
+
+        /*
+        
+         
+        Ray ray = new Ray(transform.position, targetWaypoint.position);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 50, layers))
+        {
+            CheckHit(hit, dir, laser);
+        }
+
+         */
+
         // Verificar si el GameObject ha llegado al waypoint actual
         if (Vector3.Distance(transform.position, targetWaypoint.position) < 0.1f)
         {
@@ -45,4 +60,5 @@ public class MovableObstacle : MonoBehaviour
             }
         }
     }
+
 }

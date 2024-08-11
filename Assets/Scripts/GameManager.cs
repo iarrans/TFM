@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
         scapedChars = 0;
+        Application.targetFrameRate = 60;
         DOTween.Init();
     }
 
