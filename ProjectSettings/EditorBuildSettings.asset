@@ -35,4 +35,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Basics/6.unity
     guid: a26471a07173be946a9dcd5b3851afc2
+  - enabled: 1
+    path: Assets/Scenes/Levels/Basics/A1.unity
+    guid: 3f1353d456f684e419070d17c6eb579e
+  - enabled: 1
+    path: Assets/Scenes/Levels/Basics/A2.unity
+    guid: 4c511395607b7524faef0606e3b46d31
+  - enabled: 1
+    path: Assets/Scenes/Levels/Basics/B1.unity
+    guid: 9fab4c61884d7d749adb14b809471046
+  - enabled: 1
+    path: Assets/Scenes/Levels/Basics/B2.unity
+    guid: 54519963a18fe20499d12426ed453010
+  - enabled: 1
+    path: Assets/Scenes/Levels/Basics/C1.unity
+    guid: 25f0e57e208970842a867f2b095be25e
+  - enabled: 1
+    path: Assets/Scenes/Levels/Basics/C2.unity
+    guid: 875007a7d3e4bce488683c140f6d25d6
+  - enabled: 1
+    path: Assets/Scenes/Levels/Basics/D1.unity
+    guid: 6041818923d1a484bbc1b9e355f5cad9
+  - enabled: 1
+    path: Assets/Scenes/Levels/Basics/D2.unity
+    guid: c1c9b2c75555ac841bebcfd2ccf60510
+  - enabled: 1
+    path: Assets/Scenes/Levels/Basics/E1.unity
+    guid: 3811749e91a3e4f4184d2defc41735e0
+  - enabled: 1
+    path: Assets/Scenes/Levels/Basics/E2.unity
+    guid: 4a549dcdca4a7974fb44958d4fa45a27
   m_configObjects: {}
