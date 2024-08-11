@@ -23,6 +23,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip OpenDoorsBGM;   //Suena cuando se abren las puertas: secuencia de escape
     public AudioClip VictoryBGM;     //Suena en la pantalla de victoria del nivel
 
+    public AudioClip raySFX;
     private void Awake()
     {
         if (instance == null)
@@ -54,6 +55,11 @@ public class AudioManager : MonoBehaviour
     {
         BGMsource.clip = VictoryBGM;
         BGMsource.Play();
+    }
+
+    public void RaySFX()
+    {
+        PlaySFXClip(raySFX);
     }
 
     //Metodos para reproducir los efectos de sonido

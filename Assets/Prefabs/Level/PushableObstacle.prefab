@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6496886629382030357}
   - component: {fileID: 3654866160967314282}
   - component: {fileID: 3219477761458583003}
+  - component: {fileID: 917822893229750944}
   m_Layer: 0
   m_Name: PushableObstacle
   m_TagString: Untagged
@@ -133,3 +134,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &917822893229750944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5690204595530212832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 581f15e6d0726b14481249d598f11a76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pushSound: {fileID: 8300000, guid: 59803129123556d4cbaa1e8b826971aa, type: 3}
+  audioIsPlaying: 0

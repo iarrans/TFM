@@ -1165,6 +1165,11 @@ PrefabInstance:
       propertyPath: winningCamPosition
       value: 
       objectReference: {fileID: 388567576}
+    - target: {fileID: 3178338123654919471, guid: a12a2a631b776ef4ca0874b1de648c66,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.302
+      objectReference: {fileID: 0}
     - target: {fileID: 3817070733024106530, guid: a12a2a631b776ef4ca0874b1de648c66,
         type: 3}
       propertyPath: currentLevel
@@ -1180,6 +1185,16 @@ PrefabInstance:
         type: 3}
       propertyPath: textoTiempo
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426760658806103854, guid: a12a2a631b776ef4ca0874b1de648c66,
+        type: 3}
+      propertyPath: raySFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 9a28f0a7851f3784f9e2171f15663ade, type: 3}
+    - target: {fileID: 7426760658806103854, guid: a12a2a631b776ef4ca0874b1de648c66,
+        type: 3}
+      propertyPath: BGMVolume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

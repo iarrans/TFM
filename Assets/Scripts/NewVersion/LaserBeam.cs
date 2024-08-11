@@ -12,6 +12,7 @@ public class LaserBeam
     List<Vector3> laserPositions = new List<Vector3>();
     int playerHitCounter;
     public LayerMask layers;
+    int lastCount = 2;
 
    public LaserBeam(Material material)
     {
@@ -98,6 +99,13 @@ public class LaserBeam
             laser.SetPosition(count, idx);
             count++;
         }
+
+        //para que se lance sonido cada vez que la luz rebota en un jugador
+        if (laserPositions.Count > lastCount)
+        {
+            AudioManager.instance.RaySFX();
+        }
+        lastCount = laserPositions.Count;
     }
 }
 
