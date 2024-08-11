@@ -275,6 +275,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PushableObstacle (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5690204595530212832, guid: 67b9b9604c030f844a530c2f16d34de6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1084,6 +1089,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PushableObstacle (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5690204595530212832, guid: 67b9b9604c030f844a530c2f16d34de6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1249,6 +1259,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PushableObstacle (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5690204595530212832, guid: 67b9b9604c030f844a530c2f16d34de6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1633,6 +1648,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PushableObstacle (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5690204595530212832, guid: 67b9b9604c030f844a530c2f16d34de6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1892,11 +1912,6 @@ PrefabInstance:
       propertyPath: winningCamPosition
       value: 
       objectReference: {fileID: 783987236}
-    - target: {fileID: 2885516415068811407, guid: a12a2a631b776ef4ca0874b1de648c66,
-        type: 3}
-      propertyPath: RaycastLayers.m_Bits
-      value: 65
-      objectReference: {fileID: 0}
     - target: {fileID: 3817070733024106530, guid: a12a2a631b776ef4ca0874b1de648c66,
         type: 3}
       propertyPath: currentLevel

@@ -193,7 +193,7 @@ MonoBehaviour:
   timeManager: {fileID: 4942218801491531370}
   RaycastLayers:
     serializedVersion: 2
-    m_Bits: 65
+    m_Bits: 193
   scapedChars: 0
   requiredPlayers: 4
   playingLevel: 1

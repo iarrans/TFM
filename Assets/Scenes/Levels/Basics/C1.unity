@@ -1540,11 +1540,6 @@ PrefabInstance:
       propertyPath: winningCamPosition
       value: 
       objectReference: {fileID: 783987236}
-    - target: {fileID: 2885516415068811407, guid: a12a2a631b776ef4ca0874b1de648c66,
-        type: 3}
-      propertyPath: RaycastLayers.m_Bits
-      value: 65
-      objectReference: {fileID: 0}
     - target: {fileID: 3817070733024106530, guid: a12a2a631b776ef4ca0874b1de648c66,
         type: 3}
       propertyPath: currentLevel
