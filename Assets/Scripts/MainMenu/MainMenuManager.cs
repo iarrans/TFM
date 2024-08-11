@@ -2,20 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenuManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Slider bgmSlider;
+    public Slider sfxSlider;
+    public AudioSource mainMenuAudio;
+    public AudioSource sfxMenu;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] AudioClip buttonSound;
 
     public void MoveToScene(int scene)
     {
@@ -25,5 +21,23 @@ public class MainMenuManager : MonoBehaviour
     public void CloseGame()
     {
         Application.Quit();
+    }
+
+    public void ChangeBGMVolume()
+    {
+        MainUtils.BGMVolume = bgmSlider.value;
+        mainMenuAudio.volume = bgmSlider.value;
+    }
+
+    public void ChangeSFXVolume()
+    {
+        MainUtils.SFXVolume = sfxSlider.value;
+        sfxMenu.volume = sfxSlider.value;
+    }
+
+    public void PlayButtonSound()
+    {
+        sfxMenu.clip = buttonSound;
+        sfxMenu.Play();
     }
 }
