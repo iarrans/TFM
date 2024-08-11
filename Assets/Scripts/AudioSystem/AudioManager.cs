@@ -16,8 +16,6 @@ public class AudioManager : MonoBehaviour
 
     public static AudioManager instance;
 
-    [SerializeField] private AudioSource SFXPrefab;
-
 
     public AudioClip SolvingBGM;     //Suena durante el nivel
     public AudioClip OpenDoorsBGM;   //Suena cuando se abren las puertas: secuencia de escape
@@ -30,6 +28,9 @@ public class AudioManager : MonoBehaviour
         {
             instance = this;
         }
+
+        BGMVolume = MainUtils.BGMVolume;
+        SFXVolume = MainUtils.SFXVolume;
     }
 
     public void Start()

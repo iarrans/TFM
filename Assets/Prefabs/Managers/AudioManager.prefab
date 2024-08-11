@@ -48,8 +48,6 @@ MonoBehaviour:
   BGMsource: {fileID: 8461215132833723797}
   BGMVolume: 1
   SFXVolume: 1
-  SFXPrefab: {fileID: 5859638047469918054, guid: 6a428a0f027915745b486f8f1a840cee,
-    type: 3}
   SolvingBGM: {fileID: 8300000, guid: 186b02ed05f1814409f87bdc699bb7bd, type: 3}
   OpenDoorsBGM: {fileID: 8300000, guid: b1149f4af1ed70e49b54af1e7b7027de, type: 3}
   VictoryBGM: {fileID: 8300000, guid: 790ff339d5060e841a7289ecac242bd1, type: 3}

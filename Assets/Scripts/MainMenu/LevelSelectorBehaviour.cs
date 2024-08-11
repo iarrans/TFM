@@ -20,7 +20,6 @@ public class LevelSelectorBehaviour : MonoBehaviour
     {
         foreach (LevelSO level in levelManager.levels)
         {
-            Debug.Log("Papaya");
             GameObject buttonGO = Instantiate(levelButtonPrefab, LevelScrollsContent.transform);
             LevelButtonBehaviour button = buttonGO.GetComponent<LevelButtonBehaviour>();
             button.level = level;

@@ -8,7 +8,7 @@ public class MainUtils
 
     public static int levelID = 0;
 
-    public static float BGMVolume;
+    public static float BGMVolume = 1;
 
-    public static float SFXVolume;
+    public static float SFXVolume = 1;
 }
