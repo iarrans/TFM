@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.0071, z: 0}
-  m_LocalScale: {x: 2.18, y: 1.9156682, z: 0.33999997}
+  m_LocalScale: {x: 2, y: 1.9, z: 0.33999997}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8417039512252607290}
@@ -412,9 +412,9 @@ MonoBehaviour:
   playerNumber: 0
   mirrorType: 2
   rotationSound: {fileID: 8300000, guid: b89fcd7b0518f844d9291432412380b7, type: 3}
-  WallLayers:
+  wallLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
 --- !u!54 &3935090279300623477
 Rigidbody:
   m_ObjectHideFlags: 0
