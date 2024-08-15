@@ -1,3 +1,5 @@
+using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +9,13 @@ public class MovableObstacle : MonoBehaviour
     public Transform[] waypoints; // Array de waypoints
     public float speed = 5f; // Velocidad de movimiento
     private int currentWaypointIndex = 0; // Índice del waypoint actual
+    public float initialSpeed = 5f;
+
+    public LayerMask characterLayers;
+    public LayerMask wallLayers;
+    public float margin = 0.5f;
+
+    public bool playerInArea = false;
 
     void Update()
     {
@@ -14,32 +23,41 @@ public class MovableObstacle : MonoBehaviour
         if (waypoints.Length == 0)
             return;
 
-        // Mover el GameObject hacia el waypoint actual
+        // Designar waypoint actual
         Transform targetWaypoint = waypoints[currentWaypointIndex];
+
+        // Mover el GameObject hacia el waypoint actual
         Vector3 direction = targetWaypoint.position - transform.position;
         transform.Translate(direction.normalized * speed * Time.deltaTime, Space.World);
 
         //Cond: si raycast (< tamanyo de pj) da con pared en alguna dir y hay pj en el trigger, se cambia al siguiente para evitar empujarlo
 
-        /*
-        
-         
-        Ray ray = new Ray(transform.position, targetWaypoint.position);
+        //Raycast pared, raycast pj. Si distancia a pared <= distancia pj - margen, se cambia de direccion        
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, 50, layers))
+        Ray wallRay = new Ray(transform.position, transform.position - targetWaypoint.position);
+        Debug.Log("-------DIRECTION: " + wallRay.direction);
+
+        float wallDistance = -1;
+        if (Physics.Raycast(wallRay, out hit, 50, wallLayers))
         {
-            CheckHit(hit, dir, laser);
+            wallDistance = hit.distance;
+        }
+        if (wallDistance<2f && wallDistance > 0 && playerInArea)
+        {
+            speed = 0;
+        }
+        else
+        {
+            speed = initialSpeed;
         }
 
-         */
-
-        // Verificar si el GameObject ha llegado al waypoint actual
         if (Vector3.Distance(transform.position, targetWaypoint.position) < 0.1f)
         {
             // Cambiar al siguiente waypoint
             currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Length;
         }
+
     }
 
     void OnDrawGizmos()
@@ -60,5 +78,6 @@ public class MovableObstacle : MonoBehaviour
             }
         }
     }
+
 
 }
