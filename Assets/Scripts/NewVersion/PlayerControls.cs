@@ -42,8 +42,11 @@ public class PlayerControls : MonoBehaviour
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        Debug.Log("Move");
-        move = context.ReadValue<Vector2>();
+        if (GameManager.Instance.playingLevel)
+        {
+            Debug.Log("Move");
+            move = context.ReadValue<Vector2>();
+        }
     }
 
     void Move()
@@ -70,7 +73,7 @@ public class PlayerControls : MonoBehaviour
 
     public void OnRotate(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && GameManager.Instance.playingLevel)
         {
             Debug.Log("Rotate");
             AudioManager.instance.PlaySFXClip(rotationSound);

@@ -4,13 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 using TMPro;
-using Unity.VisualScripting;
+using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     // Start is called before the first frame update
 
     public static UIManager Instance;
 
+    [Header("VICTORY SCREEN SETTINGS")]
     //Victory Screen Attributes
     public GameObject victoryScreen;
 
@@ -19,14 +20,23 @@ public class UIManager : MonoBehaviour
 
     public List<GameObject> vicScreenButtons;
 
+    [Header("JOIN SCREEN SETTINGS")]
+    //Player join screen attributes
+    public GameObject playerJoinScreen;
+    public List<GameObject> playerJoinImages;
+    public GameObject readyObject;
+    public AudioClip levelStartAudio;
+
+    [Header("PAUSE SCREEN SETTINGS")]
     //Pause Screen Attributes
     public GameObject pauseScreen;
-    
+
 
     private void Awake()
     {
         Instance = this;
         DOTween.Init();
+        playerJoinScreen.SetActive(true);
     }
 
     public void RestartScene()
@@ -106,4 +116,20 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void AddPlayerToScreen(int number)
+    {
+        Image playerImage = playerJoinImages[number].GetComponent<Image>();
+        TextMeshProUGUI playerText = playerJoinImages[number].transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+
+        playerImage.color = Color.green;
+        int playernumber = number + 1;
+        playerText.text = "Player " + playernumber  + " ready!";
+
+        if (number +1 >= GameManager.Instance.requiredPlayers)
+        {
+            readyObject.SetActive(true);
+            AudioManager.instance.PlaySFXClip(levelStartAudio);
+            GameManager.Instance.ShowLevel();
+        }
+    }
 }

@@ -33,11 +33,6 @@ public class AudioManager : MonoBehaviour
         SFXVolume = MainUtils.SFXVolume;
     }
 
-    public void Start()
-    {
-        StartLevelMusic();
-    }
-
     //Metodos para Background music
     public void StartLevelMusic()
     {

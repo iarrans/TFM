@@ -12,7 +12,10 @@ public class TimeManager : MonoBehaviour
 
     public void Update()
     {
-        tiempoTranscurrido += Time.deltaTime; 
+        if (GameManager.Instance.playingLevel)
+        {
+            tiempoTranscurrido += Time.deltaTime;
+        }       
     }
 
 }

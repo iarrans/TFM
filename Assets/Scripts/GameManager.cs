@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
         scapedChars = 0;
+        playingLevel = false;
         Application.targetFrameRate = 60;
         DOTween.Init();
     }
@@ -39,5 +40,18 @@ public class GameManager : MonoBehaviour
             Camera.main.transform.DOMove(winningCamPosition.position,3);
             Camera.main.transform.DORotate(winningCamPosition.rotation.eulerAngles, 3);
         }
+    }
+
+    public void ShowLevel()
+    {
+        StartCoroutine(StartLevel());
+    }
+
+    public IEnumerator StartLevel()
+    {
+        yield return new WaitForSeconds(2);
+        GameManager.Instance.playingLevel = true;
+        AudioManager.instance.StartLevelMusic();
+        UIManager.Instance.playerJoinScreen.SetActive(false);
     }
 }

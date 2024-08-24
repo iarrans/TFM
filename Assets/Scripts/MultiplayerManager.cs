@@ -42,6 +42,18 @@ public class MultiplayerManager : MonoBehaviour
 
         //Se configuran las layers correctamente para los colliders exclusivos de jugadores
         int PlayerLayer = LayerMask.NameToLayer("Default");
+
+        UIManager.Instance.AddPlayerToScreen(positionIndex);
+
+        playerGO.layer = PlayerLayer;
+        playerGO.transform.GetChild(0).gameObject.layer = PlayerLayer;
+
+        spawnPositions[positionIndex].gameObject.SetActive(false);
+
+        positionIndex++;
+
+        AudioManager.instance.PlaySFXClip(PlayerJoinedSound);
+
         /*switch (positionIndex)
         {
             case 0:
@@ -61,14 +73,5 @@ public class MultiplayerManager : MonoBehaviour
                 break;
         }
         */
-
-        playerGO.layer = PlayerLayer;
-        playerGO.transform.GetChild(0).gameObject.layer = PlayerLayer;
-
-        spawnPositions[positionIndex].gameObject.SetActive(false);
-
-        positionIndex++;
-
-        AudioManager.instance.PlaySFXClip(PlayerJoinedSound);
     }
 }
