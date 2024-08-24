@@ -50,8 +50,13 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  players: []
+  players:
+  - {fileID: 919132149155446097, guid: 46d1422caf325704a820fe2c0214c20f, type: 3}
+  - {fileID: 919132149155446097, guid: c9867c58218e4774cb340883b184c9b6, type: 3}
+  - {fileID: 919132149155446097, guid: a06a3a1eda2a7d248bd87297d57c3e73, type: 3}
+  - {fileID: 919132149155446097, guid: c0e57b3feda1f4b4d83aaba51b7f21ca, type: 3}
   PlayerJoinedSound: {fileID: 8300000, guid: d1e7b8a733d42454f98df39173bbfe84, type: 3}
+  characterModels: []
 --- !u!114 &6883103928228858501
 MonoBehaviour:
   m_ObjectHideFlags: 0

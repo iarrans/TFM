@@ -16,6 +16,8 @@ public class MultiplayerManager : MonoBehaviour
 
     public AudioClip PlayerJoinedSound;
 
+    public List<GameObject> characterModels;
+
     private void Awake()
     {
         Instance = this;
