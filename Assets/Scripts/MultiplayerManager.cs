@@ -72,6 +72,10 @@ public class MultiplayerManager : MonoBehaviour
                 break;
             case 3:
                 characterViewer.GetComponent<MeshRenderer>().SetMaterials(p4Materials);
+                BoxCollider box =characterViewer.GetComponent<BoxCollider>();
+                //TEST This size
+                box.center = new Vector3(box.center.x, box.center.y, -0.006f);
+                box.size = new Vector3(box.size.x, box.size.y, 0.013f);
                 break;;
             default:
                 print("Incorrect player index.");
