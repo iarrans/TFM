@@ -109,7 +109,7 @@ public class PlayerControls : MonoBehaviour
                 break;
         }
 
-        body.Rotate(0, degreeNumber, 0.0f, Space.Self);
+        body.Rotate(0,0.0f, degreeNumber, Space.Self);
     }
 
 }
