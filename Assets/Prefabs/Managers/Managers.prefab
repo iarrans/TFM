@@ -50,13 +50,40 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  players:
-  - {fileID: 919132149155446097, guid: 46d1422caf325704a820fe2c0214c20f, type: 3}
-  - {fileID: 919132149155446097, guid: c9867c58218e4774cb340883b184c9b6, type: 3}
-  - {fileID: 919132149155446097, guid: a06a3a1eda2a7d248bd87297d57c3e73, type: 3}
-  - {fileID: 919132149155446097, guid: c0e57b3feda1f4b4d83aaba51b7f21ca, type: 3}
+  players: []
   PlayerJoinedSound: {fileID: 8300000, guid: d1e7b8a733d42454f98df39173bbfe84, type: 3}
-  characterModels: []
+  characterMeshes:
+  - {fileID: -1562275218897716241, guid: 39534e60d477ef341b753932db27e416, type: 3}
+  - {fileID: -7969978266939365281, guid: 9bc4883fc6361444890395df07e191fc, type: 3}
+  - {fileID: -5582133695706433325, guid: 6e6b3c376d5212243b68bae49eb8cb98, type: 3}
+  - {fileID: -2628482395200241503, guid: 7431222eb03ad2b4ab29a35ceb4a7286, type: 3}
+  p1Materials:
+  - {fileID: -3522955778539423533, guid: 39534e60d477ef341b753932db27e416, type: 3}
+  - {fileID: -3846018093981099296, guid: 39534e60d477ef341b753932db27e416, type: 3}
+  - {fileID: -8274133419916619345, guid: 39534e60d477ef341b753932db27e416, type: 3}
+  - {fileID: -6478536213147159724, guid: 39534e60d477ef341b753932db27e416, type: 3}
+  - {fileID: -2813467912831258332, guid: 39534e60d477ef341b753932db27e416, type: 3}
+  - {fileID: 6699446615349125189, guid: 39534e60d477ef341b753932db27e416, type: 3}
+  p2Materials:
+  - {fileID: 880774007180850119, guid: c9867c58218e4774cb340883b184c9b6, type: 3}
+  - {fileID: -3522955778539423533, guid: 9bc4883fc6361444890395df07e191fc, type: 3}
+  - {fileID: -8274133419916619345, guid: 9bc4883fc6361444890395df07e191fc, type: 3}
+  - {fileID: 6699446615349125189, guid: 9bc4883fc6361444890395df07e191fc, type: 3}
+  - {fileID: 4874126678125670354, guid: 9bc4883fc6361444890395df07e191fc, type: 3}
+  p3Materials:
+  - {fileID: -3522955778539423533, guid: 6e6b3c376d5212243b68bae49eb8cb98, type: 3}
+  - {fileID: -8274133419916619345, guid: 6e6b3c376d5212243b68bae49eb8cb98, type: 3}
+  - {fileID: 1886820026795636259, guid: 6e6b3c376d5212243b68bae49eb8cb98, type: 3}
+  - {fileID: -6087771358165109452, guid: 6e6b3c376d5212243b68bae49eb8cb98, type: 3}
+  - {fileID: 4874126678125670354, guid: 6e6b3c376d5212243b68bae49eb8cb98, type: 3}
+  - {fileID: 880774007180850119, guid: 6e6b3c376d5212243b68bae49eb8cb98, type: 3}
+  p4Materials:
+  - {fileID: -3522955778539423533, guid: 7431222eb03ad2b4ab29a35ceb4a7286, type: 3}
+  - {fileID: 1886820026795636259, guid: 7431222eb03ad2b4ab29a35ceb4a7286, type: 3}
+  - {fileID: 4874126678125670354, guid: 7431222eb03ad2b4ab29a35ceb4a7286, type: 3}
+  - {fileID: 6699446615349125189, guid: 7431222eb03ad2b4ab29a35ceb4a7286, type: 3}
+  - {fileID: -3846018093981099296, guid: 7431222eb03ad2b4ab29a35ceb4a7286, type: 3}
+  - {fileID: -8274133419916619345, guid: 7431222eb03ad2b4ab29a35ceb4a7286, type: 3}
 --- !u!114 &6883103928228858501
 MonoBehaviour:
   m_ObjectHideFlags: 0

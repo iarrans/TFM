@@ -204,8 +204,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3476144074004571816}
   - {fileID: 8010827651738927765}
+  - {fileID: 3476144074004571816}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3708928197320673733
@@ -422,6 +422,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5754084199372789682, guid: 39534e60d477ef341b753932db27e416,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -1562275218897716241, guid: 39534e60d477ef341b753932db27e416,
+        type: 3}
     - target: {fileID: 919132149155446097, guid: 39534e60d477ef341b753932db27e416,
         type: 3}
       propertyPath: m_Name

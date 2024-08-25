@@ -16,7 +16,11 @@ public class MultiplayerManager : MonoBehaviour
 
     public AudioClip PlayerJoinedSound;
 
-    public List<GameObject> characterModels;
+    public List<Mesh> characterMeshes;
+    public List<Material> p1Materials;
+    public List<Material> p2Materials;
+    public List<Material> p3Materials;
+    public List<Material> p4Materials;
 
     private void Awake()
     {
@@ -40,40 +44,41 @@ public class MultiplayerManager : MonoBehaviour
         //Se cambia el texto para indicar num del jugador
         int planerNumber = positionIndex + 1;
         playerGO.name = "Player " + planerNumber;
-        playerGO.transform.GetChild(1).GetComponent<TextMeshPro>().text = "Player " + planerNumber;
+        playerGO.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Player " + planerNumber;
 
         //Se configuran las layers correctamente para los colliders exclusivos de jugadores
         int PlayerLayer = LayerMask.NameToLayer("Default");
 
         UIManager.Instance.AddPlayerToScreen(positionIndex);
 
-        playerGO.layer = PlayerLayer;
-        playerGO.transform.GetChild(0).gameObject.layer = PlayerLayer;
-
         spawnPositions[positionIndex].gameObject.SetActive(false);
-
-        positionIndex++;
 
         AudioManager.instance.PlaySFXClip(PlayerJoinedSound);
 
-        /*switch (positionIndex)
+        playerGO.layer = PlayerLayer;
+        GameObject characterViewer = playerGO.transform.GetChild(1).gameObject;
+        characterViewer.GetComponent<MeshFilter>().mesh = characterMeshes[positionIndex];      
+
+        switch (positionIndex)
         {
             case 0:
-                PlayerLayer = LayerMask.NameToLayer("PlayerLayer1");
+                characterViewer.GetComponent<MeshRenderer>().SetMaterials(p1Materials);
                 break;
             case 1:
-                PlayerLayer = LayerMask.NameToLayer("PlayerLayer2");
+                characterViewer.GetComponent<MeshRenderer>().SetMaterials(p2Materials);
                 break;
             case 2:
-                PlayerLayer = LayerMask.NameToLayer("PlayerLayer3");
+                characterViewer.GetComponent<MeshRenderer>().SetMaterials(p3Materials);
                 break;
             case 3:
-                PlayerLayer = LayerMask.NameToLayer("PlayerLayer4");
+                characterViewer.GetComponent<MeshRenderer>().SetMaterials(p4Materials);
                 break;;
             default:
                 print("Incorrect player index.");
                 break;
         }
-        */
+
+        positionIndex++;
+
     }
 }

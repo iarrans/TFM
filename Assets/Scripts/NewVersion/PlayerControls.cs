@@ -21,7 +21,7 @@ public class PlayerControls : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        body = transform.GetChild(0);
+        body = transform.GetChild(1);
     }
 
     public void PlayerJoined(PlayerInput input)
