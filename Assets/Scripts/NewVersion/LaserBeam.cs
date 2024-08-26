@@ -70,7 +70,17 @@ public class LaserBeam
             Vector3 pos = hitInfo.point;
             Vector3 dir = Vector3.Reflect(direction, hitInfo.normal);
 
-            playerHitCounter++;
+            //Llamamos al metodo activar particulas, limitada por una corrutina con espera para no comprobar todo el rato
+            if (hitInfo.transform.parent != null)
+            {
+                hitInfo.transform.parent.GetComponent<PlayerCollissions>().ActivateParticles();
+            }
+            else
+            {
+                hitInfo.transform.GetComponent<PlayerCollissions>().ActivateParticles();
+            }
+
+            playerHitCounter++;     
 
             CastRayRecursive(pos, dir, laser);
         }
