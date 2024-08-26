@@ -25,6 +25,7 @@ public class DoorLightReceptor : MonoBehaviour
             AudioManager.instance.PlaySFXClip(doorOpeningSound);
             AudioManager.instance.PlayOpenDoorsMusic();
             MultiplayerManager.Instance.gameObject.GetComponent<PlayerInputManager>().DisableJoining();
+            GameManager.Instance.ActiveAlarms();
         }     
     }
 

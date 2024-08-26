@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,7 +19,11 @@ public class GameManager : MonoBehaviour
 
     public bool playingLevel = true;
 
+    public bool alarmsActive = false;
+
     public Transform winningCamPosition;
+
+    public Light AlarmLight;
 
 
     private void Awake()
@@ -35,6 +40,7 @@ public class GameManager : MonoBehaviour
         scapedChars++;
         if (scapedChars == requiredPlayers)
         {
+            alarmsActive = false;
             UIManager.Instance.ShowVictoryScreen();
             AudioManager.instance.PlayVictoryMusic();
             Camera.main.transform.DOMove(winningCamPosition.position,3);
@@ -53,5 +59,23 @@ public class GameManager : MonoBehaviour
         GameManager.Instance.playingLevel = true;
         AudioManager.instance.StartLevelMusic();
         UIManager.Instance.playerJoinScreen.SetActive(false);
+    }
+
+    public void ActiveAlarms()
+    {
+        alarmsActive = true;
+        StartCoroutine(AlarmsCoroutine());
+    }
+
+    private IEnumerator AlarmsCoroutine()
+    {
+        while (alarmsActive)
+        {
+            AlarmLight.gameObject.SetActive(true);
+            yield return new WaitForSeconds(1.5f);
+            AlarmLight.gameObject.SetActive(false);
+            yield return new WaitForSeconds(1.5f);
+        }
+        AlarmLight.gameObject.SetActive(false);
     }
 }
