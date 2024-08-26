@@ -74,10 +74,12 @@ public class LaserBeam
             if (hitInfo.transform.parent != null)
             {
                 hitInfo.transform.parent.GetComponent<PlayerCollissions>().ActivateParticles();
+                hitInfo.transform.parent.GetComponent<PlayerCollissions>().ActivateLightOutline();
             }
             else
             {
                 hitInfo.transform.GetComponent<PlayerCollissions>().ActivateParticles();
+                hitInfo.transform.GetComponent<PlayerCollissions>().ActivateLightOutline();
             }
 
             playerHitCounter++;     
