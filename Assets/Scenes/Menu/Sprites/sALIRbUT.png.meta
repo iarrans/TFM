@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bbdd6948e42329748a5ce300bda25cc7
+guid: c624384cb0e839e42bc22068771081f4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JUgarButton_0
+      name: sALIRbUT_0
       rect:
         serializedVersion: 2
-        x: 48
-        y: 9
-        width: 561
-        height: 188
+        x: 98
+        y: 35
+        width: 375
+        height: 135
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd2dcc4904dfda04781de288a1fdc1f4
-      internalID: 774485342
+      spriteID: db35099b735664d49a435af2f7b78cf1
+      internalID: -368986100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JUgarButton_1
+      name: sALIRbUT_1
       rect:
         serializedVersion: 2
-        x: 618
-        y: 10
-        width: 588
-        height: 186
+        x: 473
+        y: 84
+        width: 35
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3156060b82eddd242bfeb7d32f52ba58
-      internalID: 1693674783
+      spriteID: 20c7a89a9f567e149a87e1f49bb48a38
+      internalID: 691401839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JUgarButton_2
+      name: sALIRbUT_2
       rect:
         serializedVersion: 2
-        x: 1216
-        y: 7
-        width: 595
-        height: 192
+        x: 588
+        y: 32
+        width: 350
+        height: 141
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f58bf2e063c3e74786bdb86397f8f59
-      internalID: 275286302
+      spriteID: 145edf73a5393834f864e4d27193c2e9
+      internalID: 119393603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sALIRbUT_3
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 29
+        width: 356
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029ddcb278f692b45b43aed7934b9129
+      internalID: -1700363185
       vertices: []
       indices: 
       edges: []
@@ -175,7 +196,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d58339c99c80847418cdcaa0f34af7d6
+    spriteID: 6e212cbbcf8d1904191ba7922b9e05a4
     internalID: 0
     vertices: []
     indices: 
@@ -183,9 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      JUgarButton_0: 774485342
-      JUgarButton_1: 1693674783
-      JUgarButton_2: 275286302
+      sALIRbUT_0: -368986100
+      sALIRbUT_1: 691401839
+      sALIRbUT_2: 119393603
+      sALIRbUT_3: -1700363185
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

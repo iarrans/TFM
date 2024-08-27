@@ -8,61 +8,61 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu/MainMenu.unity
     guid: f8f48558430f4864e960b3e56701babe
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu/Credits.unity
     guid: a34a44eafec117b4781d65df2a0b9c20
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu/LegacySettings.unity
     guid: 9b16fc467a605e6478f2f0f7764e4515
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Basics/0.unity
     guid: a5d3360ea69f1d0419f67a7db5a8f252
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Basics/1.unity
-    guid: a48c4d7d358896e4c9720f91c9de4858
-  - enabled: 1
+    guid: 6ab82d77236427f4dbcfd152aa3f488a
+  - enabled: 0
     path: Assets/Scenes/Levels/Basics/3.unity
     guid: 686c156febf5d984284fa992e7af5038
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Basics/4.unity
     guid: 0140b0f938a2dbf4091a5682accac7cc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Basics/5.unity
     guid: bf64ba8cfa163b4428393763c1c617b9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Basics/6.unity
     guid: 6bc6911796f09414e8beb08d82136c48
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Basics/6.unity
-    guid: a26471a07173be946a9dcd5b3851afc2
-  - enabled: 1
+    guid: 6bc6911796f09414e8beb08d82136c48
+  - enabled: 0
     path: Assets/Scenes/Levels/Basics/A1.unity
     guid: 3f1353d456f684e419070d17c6eb579e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Basics/A2.unity
     guid: 4c511395607b7524faef0606e3b46d31
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Basics/B1.unity
     guid: 9fab4c61884d7d749adb14b809471046
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Basics/B2.unity
     guid: 54519963a18fe20499d12426ed453010
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Basics/C1.unity
     guid: 25f0e57e208970842a867f2b095be25e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Basics/C2.unity
     guid: 875007a7d3e4bce488683c140f6d25d6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Basics/D1.unity
     guid: 6041818923d1a484bbc1b9e355f5cad9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Basics/D2.unity
     guid: c1c9b2c75555ac841bebcfd2ccf60510
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Basics/E1.unity
     guid: 3811749e91a3e4f4184d2defc41735e0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Basics/E2.unity
     guid: 4a549dcdca4a7974fb44958d4fa45a27
   m_configObjects: {}
