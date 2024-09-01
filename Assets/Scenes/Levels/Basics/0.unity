@@ -1472,6 +1472,11 @@ PrefabInstance:
       propertyPath: winningCamPosition
       value: 
       objectReference: {fileID: 44269893}
+    - target: {fileID: 3178338123654919471, guid: a12a2a631b776ef4ca0874b1de648c66,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.38
+      objectReference: {fileID: 0}
     - target: {fileID: 3817070733024106530, guid: a12a2a631b776ef4ca0874b1de648c66,
         type: 3}
       propertyPath: currentLevel
