@@ -11,20 +11,11 @@ public class MovableObstacleTrigger : MonoBehaviour
         obstacleScript = transform.parent.GetComponent<MovableObstacle>();
     }
 
-    // Start is called before the first frame update
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            obstacleScript.playerInArea = true;
-        }      
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            obstacleScript.playerInArea = false;
+            obstacleScript.canMove = !other.transform.parent.GetComponent<PlayerCollissions>().IsCollisioning;
         }
     }
 }

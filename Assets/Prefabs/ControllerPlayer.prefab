@@ -5124,6 +5124,7 @@ GameObject:
   - component: {fileID: 8997350558700786099}
   - component: {fileID: 3935090279300623477}
   - component: {fileID: 4205191132629746994}
+  - component: {fileID: 1733484457512458075}
   m_Layer: 0
   m_Name: ControllerPlayer
   m_TagString: Player
@@ -5295,3 +5296,16 @@ MonoBehaviour:
   characterRenderer: {fileID: 2339217870828920263}
   isOutlineActive: 0
   outlineMaterial: {fileID: 2100000, guid: f7b010bac27ab6848803b92232bd401d, type: 2}
+  playerCollission: {fileID: 1733484457512458075}
+--- !u!114 &1733484457512458075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6355953119690798831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5da9703f46ac14a8e7c1cf170a9dbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

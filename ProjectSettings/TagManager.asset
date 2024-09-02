@@ -10,6 +10,7 @@ TagManager:
   - MirrorDown
   - ExitTrigger
   - PushableObstacle
+  - Wall
   layers:
   - Default
   - TransparentFX

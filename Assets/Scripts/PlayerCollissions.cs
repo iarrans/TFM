@@ -17,6 +17,29 @@ public class PlayerCollissions : MonoBehaviour
 
     public Material outlineMaterial;
 
+    public CollissionDetector playerCollission;
+
+    private int wallsCollissioned;
+
+    public bool IsCollisioning { get { if (wallsCollissioned > 0) return true; return false; }  }
+
+
+    private void Start()
+    {
+        playerCollission.OnObjectEntered += WallCollisionEnter;
+        playerCollission.OnObjectExited += WalCollisionExit;
+    }
+
+    private void WalCollisionExit()
+    {
+        wallsCollissioned--;
+    }
+
+    private void WallCollisionEnter()
+    {
+        wallsCollissioned++;
+    }
+
     // Start is called before the first frame update
     public void OnTriggerEnter(Collider other)
     {
