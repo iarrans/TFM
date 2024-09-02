@@ -21,6 +21,10 @@ public class PlayerCollissions : MonoBehaviour
 
     private int wallsCollissioned;
 
+    public bool flag;
+    public bool lastFlag;
+
+
     public bool IsCollisioning { get { if (wallsCollissioned > 0) return true; return false; }  }
 
 
@@ -28,6 +32,28 @@ public class PlayerCollissions : MonoBehaviour
     {
         playerCollission.OnObjectEntered += WallCollisionEnter;
         playerCollission.OnObjectExited += WalCollisionExit;
+    }
+
+    private void Update()
+    {
+        flag = false;
+    }
+
+    private void LateUpdate()
+    {
+        if (flag != lastFlag)
+        {
+            Debug.Log("Changed");
+            if (flag)
+            {
+                ActivateParticles();
+            }
+            else
+            {
+                DeactivatePaticles();
+            }
+        }
+        lastFlag = flag;
     }
 
     private void WalCollisionExit()
@@ -51,38 +77,17 @@ public class PlayerCollissions : MonoBehaviour
 
     public void ActivateParticles()
     {
-        if (!areParticlesactive)
-        {
-            areParticlesactive = true;
-            StartCoroutine(ActivateParticlesSequence());
-        }
-    }
-
-    private IEnumerator ActivateParticlesSequence()
-    {
         lightParticles.gameObject.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
-        lightParticles.gameObject.SetActive(false);
-        areParticlesactive = false;
-    }
-
-    public void ActivateLightOutline()
-    {
-        if (!isOutlineActive)
-        {
-            isOutlineActive = true;
-            StartCoroutine(ActivateOutline());
-        }
-    }
-
-    private IEnumerator ActivateOutline()
-    {
         List<Material> originalMaterials = characterRenderer.materials.ToList();
         originalMaterials.Add(outlineMaterial);
         characterRenderer.SetMaterials(originalMaterials);
-        yield return new WaitForSeconds(0.75f);
+    }
+
+    public void DeactivatePaticles()
+    {
+        lightParticles.gameObject.SetActive(false);
+        List<Material> originalMaterials = characterRenderer.materials.ToList();
         originalMaterials.Remove(outlineMaterial);
         characterRenderer.SetMaterials(originalMaterials);
-        isOutlineActive = false;
     }
  }

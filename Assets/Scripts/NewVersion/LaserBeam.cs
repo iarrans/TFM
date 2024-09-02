@@ -73,13 +73,11 @@ public class LaserBeam
             //Llamamos al metodo activar particulas, limitada por una corrutina con espera para no comprobar todo el rato
             if (hitInfo.transform.parent != null)
             {
-                hitInfo.transform.parent.GetComponent<PlayerCollissions>().ActivateParticles();
-                hitInfo.transform.parent.GetComponent<PlayerCollissions>().ActivateLightOutline();
+                hitInfo.transform.parent.GetComponent<PlayerCollissions>().flag = true;
             }
             else
             {
-                hitInfo.transform.GetComponent<PlayerCollissions>().ActivateParticles();
-                hitInfo.transform.GetComponent<PlayerCollissions>().ActivateLightOutline();
+                hitInfo.transform.GetComponent<PlayerCollissions>().flag = true;
             }
 
             playerHitCounter++;     
