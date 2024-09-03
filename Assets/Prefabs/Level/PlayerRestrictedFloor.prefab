@@ -433,7 +433,7 @@ GameObject:
   - component: {fileID: 7551351229637379392}
   - component: {fileID: 5219217094216919947}
   - component: {fileID: 2696057117073610736}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerRestrictedFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
