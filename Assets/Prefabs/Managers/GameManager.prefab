@@ -63,11 +63,13 @@ MonoBehaviour:
   timeManager: {fileID: 6776001512835482735}
   RaycastLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
   scapedChars: 0
   requiredPlayers: 4
   playingLevel: 1
+  alarmsActive: 0
   winningCamPosition: {fileID: 0}
+  AlarmLight: {fileID: 0}
 --- !u!114 &907635150701391513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,3 +209,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d60cb14c710956148b3e461d2f2c34c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bgmSlider: {fileID: 0}
+  sfxSlider: {fileID: 0}
+  mainMenuAudio: {fileID: 0}
+  sfxMenu: {fileID: 0}
+  buttonSound: {fileID: 0}
