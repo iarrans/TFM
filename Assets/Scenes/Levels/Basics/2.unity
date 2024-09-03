@@ -551,6 +551,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Walls
       objectReference: {fileID: 0}
+    - target: {fileID: 7278454438768955387, guid: 4a29a71436f0af744b67c056654a5156,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 8310167406231837172, guid: 4a29a71436f0af744b67c056654a5156,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
