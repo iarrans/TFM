@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
 
     public Light AlarmLight;
 
+    public GameObject OpenDoorsParticles;
+
 
     private void Awake()
     {
@@ -63,8 +65,12 @@ public class GameManager : MonoBehaviour
 
     public void ActiveAlarms()
     {
-        alarmsActive = true;
-        StartCoroutine(AlarmsCoroutine());
+        if (!alarmsActive)
+        {
+            OpenDoorsParticles.SetActive(true);
+            alarmsActive = true;
+            StartCoroutine(AlarmsCoroutine());
+        }    
     }
 
     private IEnumerator AlarmsCoroutine()
