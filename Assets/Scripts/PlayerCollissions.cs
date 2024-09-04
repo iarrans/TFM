@@ -17,6 +17,8 @@ public class PlayerCollissions : MonoBehaviour
 
     public Material outlineMaterial;
 
+    private List<Material> characterOriginalMaterials;
+
     public CollissionDetector playerCollission;
 
     private int wallsCollissioned;
@@ -32,6 +34,7 @@ public class PlayerCollissions : MonoBehaviour
     {
         playerCollission.OnObjectEntered += WallCollisionEnter;
         playerCollission.OnObjectExited += WalCollisionExit;
+        characterOriginalMaterials = characterRenderer.materials.ToList();
     }
 
     private void Update()
@@ -78,16 +81,14 @@ public class PlayerCollissions : MonoBehaviour
     public void ActivateParticles()
     {
         lightParticles.gameObject.SetActive(true);
-        List<Material> originalMaterials = characterRenderer.materials.ToList();
-        originalMaterials.Add(outlineMaterial);
-        characterRenderer.SetMaterials(originalMaterials);
+        characterOriginalMaterials.Add(outlineMaterial);
+        characterRenderer.SetMaterials(characterOriginalMaterials);
     }
 
     public void DeactivatePaticles()
     {
         lightParticles.gameObject.SetActive(false);
-        List<Material> originalMaterials = characterRenderer.materials.ToList();
-        originalMaterials.Remove(outlineMaterial);
-        characterRenderer.SetMaterials(originalMaterials);
+        characterOriginalMaterials.Remove(outlineMaterial);
+        characterRenderer.SetMaterials(characterOriginalMaterials);
     }
  }
