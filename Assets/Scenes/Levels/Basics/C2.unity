@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -844,6 +844,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7714910939883261947, guid: d78e6782d5339464e9850d5becd83cc3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1163,12 +1168,12 @@ PrefabInstance:
     - target: {fileID: 6896469105036041652, guid: 84a91bf12d61be843b9c5873b5e8a50e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.040000476
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 6896469105036041652, guid: 84a91bf12d61be843b9c5873b5e8a50e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -15.210001
+      value: -12.16
       objectReference: {fileID: 0}
     - target: {fileID: 8485425043040088873, guid: 84a91bf12d61be843b9c5873b5e8a50e,
         type: 3}
@@ -1178,7 +1183,7 @@ PrefabInstance:
     - target: {fileID: 8591995689540115952, guid: 84a91bf12d61be843b9c5873b5e8a50e,
         type: 3}
       propertyPath: speed
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1339,12 +1344,12 @@ PrefabInstance:
     - target: {fileID: 6896469105036041652, guid: 84a91bf12d61be843b9c5873b5e8a50e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.040000476
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 6896469105036041652, guid: 84a91bf12d61be843b9c5873b5e8a50e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -15.210001
+      value: -17.47
       objectReference: {fileID: 0}
     - target: {fileID: 8485425043040088873, guid: 84a91bf12d61be843b9c5873b5e8a50e,
         type: 3}
@@ -1354,7 +1359,7 @@ PrefabInstance:
     - target: {fileID: 8591995689540115952, guid: 84a91bf12d61be843b9c5873b5e8a50e,
         type: 3}
       propertyPath: speed
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
