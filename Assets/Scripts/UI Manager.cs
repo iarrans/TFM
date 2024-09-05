@@ -26,6 +26,8 @@ public class UIManager : MonoBehaviour
     public List<GameObject> playerJoinImages;
     public GameObject readyObject;
     public AudioClip levelStartAudio;
+    public List<Sprite> readySprites;
+
 
     [Header("PAUSE SCREEN SETTINGS")]
     //Pause Screen Attributes
@@ -121,7 +123,7 @@ public class UIManager : MonoBehaviour
         Image playerImage = playerJoinImages[number].GetComponent<Image>();
         TextMeshProUGUI playerText = playerJoinImages[number].transform.GetChild(0).GetComponent<TextMeshProUGUI>();
 
-        playerImage.color = Color.green;
+        playerImage.sprite = readySprites[number];
         int playernumber = number + 1;
         playerText.text = "Player " + playernumber  + " ready!";
 
