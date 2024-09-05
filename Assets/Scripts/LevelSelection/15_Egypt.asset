@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d586554f474b1b408406780ec76aff8, type: 3}
-  m_Name: Level1
+  m_Name: 15_Egypt
   m_EditorClassIdentifier: 
-  Levelscene: 4
-  levelOrder: 1
-  levelName: Level 1
-  levelMiniature: {fileID: 21300000, guid: 21687177b1f2f5c49b193658c44a792d, type: 3}
+  Levelscene: 18
+  levelName: Egypt 2
+  levelMiniature: {fileID: -1580110985, guid: 01316533e9052b340ac446905c3aae7b, type: 3}
