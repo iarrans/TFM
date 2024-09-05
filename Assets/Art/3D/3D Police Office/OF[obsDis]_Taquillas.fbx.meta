@@ -1,59 +1,9 @@
 fileFormatVersion: 2
-guid: a8e1b04f5163fd8418f81236fa1b7377
+guid: d924e19e38c7a354d94aedac357666fb
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: f390bebc0f07b9c42ad91bd4f73c999f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.007
-    second: {fileID: 2100000, guid: bcc9d352fa00a6c4e8046da7e3b02b40, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.008
-    second: {fileID: 2100000, guid: 08149d9e775d0b64fba6be96dc7cf2b0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.009
-    second: {fileID: 2100000, guid: faa88d13c83e87144b918e60f2b2e77b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.010
-    second: {fileID: 2100000, guid: 1ab7f35db3c3ee14fb3f49dc67a02827, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.011
-    second: {fileID: 2100000, guid: 50a9873ca6342284dbf15c2503139b7e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.012
-    second: {fileID: 2100000, guid: a9170beaf16b5904fbaa81995acb6a8b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.013
-    second: {fileID: 2100000, guid: ebec0bcda3485fb4b87232fd2e06d51d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.014
-    second: {fileID: 2100000, guid: 126799a4dc26c9f4e99188ec28439339, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: 2c83546a611bfb52038c6c90eeafd3c6
-    second: {fileID: 2800000, guid: 3be4c8520a506d5469a647ccfdcdde2f, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
