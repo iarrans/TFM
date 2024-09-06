@@ -66,8 +66,9 @@ public class UIManager : MonoBehaviour
     {
         victoryScreen.SetActive(true);
 
+        vicScreenEscapedText.transform.parent.gameObject.SetActive(true);
         vicScreenEscapedText.gameObject.SetActive(true);
-        vicScreenEscapedText.transform.DOPunchScale(new Vector3(1.15f,1.15f,1.15f),1,5,2);
+        vicScreenEscapedText.transform.parent.DOPunchScale(new Vector3(1.15f,1.15f,1.15f),1,5,2);
         yield return new WaitForSeconds(2);
 
         //Check del tiempo
@@ -83,6 +84,7 @@ public class UIManager : MonoBehaviour
         vicScreenTimeResultText.text = "It took you " + leveltime + "!";
 
         //Hacemos el tiempo visible, finalmente
+        vicScreenTimeResultText.transform.parent.gameObject.SetActive(true);
         vicScreenTimeResultText.gameObject.SetActive(true);
         yield return new WaitForSeconds(1);
 
