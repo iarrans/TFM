@@ -1,19 +1,9 @@
 fileFormatVersion: 2
-guid: f17a85c8ef810ec4e89286eb61ea59d1
+guid: a8e1b04f5163fd8418f81236fa1b7377
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Bordes
-    second: {fileID: 2100000, guid: 9ab1ef8b72c19064f99d218ab3daa6ce, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Caja
-    second: {fileID: 2100000, guid: 3f703b6e368d0eb4d94530f55d1a03e8, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
