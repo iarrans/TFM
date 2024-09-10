@@ -416,8 +416,8 @@ MonoBehaviour:
   waypoints:
   - {fileID: 524492519}
   - {fileID: 524492518}
-  speed: 4
-  initialSpeed: 5
+  speed: 3
+  initialSpeed: 3
   characterLayers:
     serializedVersion: 2
     m_Bits: 0
