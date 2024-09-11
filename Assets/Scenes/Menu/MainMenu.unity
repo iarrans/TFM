@@ -234,7 +234,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -163, y: 30}
+  m_AnchoredPosition: {x: -163, y: 43}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &72941399
@@ -257,7 +257,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: BGM Volume
+  m_text: "M\xFAsica"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0828fda3c5607c34494810f2bf2bec5a, type: 2}
   m_sharedMaterial: {fileID: -5266811138903163802, guid: 0828fda3c5607c34494810f2bf2bec5a,
@@ -392,7 +392,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Back
+  m_text: Volver
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0828fda3c5607c34494810f2bf2bec5a, type: 2}
   m_sharedMaterial: {fileID: -5266811138903163802, guid: 0828fda3c5607c34494810f2bf2bec5a,
@@ -877,7 +877,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Level Selection
+  m_text: Selecciona un  nivel
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0828fda3c5607c34494810f2bf2bec5a, type: 2}
   m_sharedMaterial: {fileID: -5266811138903163802, guid: 0828fda3c5607c34494810f2bf2bec5a,
@@ -905,8 +905,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 62.3
-  m_fontSizeBase: 62.3
+  m_fontSize: 45.6
+  m_fontSizeBase: 45.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1012,7 +1012,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cancel
+  m_text: Volver
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0828fda3c5607c34494810f2bf2bec5a, type: 2}
   m_sharedMaterial: {fileID: -5266811138903163802, guid: 0828fda3c5607c34494810f2bf2bec5a,
@@ -2080,7 +2080,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Project tutored by: \nRafael Garrido and Xavier Adrados"
+  m_text: "Proyecto tutorizado por: \nRafael Garrido and Xavier Adrados"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0828fda3c5607c34494810f2bf2bec5a, type: 2}
   m_sharedMaterial: {fileID: -5266811138903163802, guid: 0828fda3c5607c34494810f2bf2bec5a,
@@ -2607,7 +2607,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Special thanks to our testers: \nOlinkmar, cakudev, nerewolfart, zafirity,
+  m_text: "Agradecimiento a nuestros testers: \nOlinkmar, cakudev, nerewolfart, zafirity,
     quilloprods, lakkion and blaster"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0828fda3c5607c34494810f2bf2bec5a, type: 2}
@@ -2743,7 +2743,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Our team: \nIsabel Arrans, El\xEDas Calero and Beatriz Llamas"
+  m_text: "Equipo: \nIsabel Arrans, El\xEDas Calero and Beatriz Llamas"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0828fda3c5607c34494810f2bf2bec5a, type: 2}
   m_sharedMaterial: {fileID: -5266811138903163802, guid: 0828fda3c5607c34494810f2bf2bec5a,
@@ -2977,8 +2977,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 33.3, y: -44.5}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 27, y: -40}
+  m_SizeDelta: {x: 228.6856, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &705880361
 MonoBehaviour:
@@ -3000,11 +3000,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Credits
+  m_text: "Cr\xE9ditos"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0828fda3c5607c34494810f2bf2bec5a, type: 2}
-  m_sharedMaterial: {fileID: -5266811138903163802, guid: 0828fda3c5607c34494810f2bf2bec5a,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4466,7 +4465,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 169, y: 30}
+  m_AnchoredPosition: {x: 169, y: 41}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1396273109
@@ -4489,7 +4488,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SFX Volume
+  m_text: Efectos de sonido
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0828fda3c5607c34494810f2bf2bec5a, type: 2}
   m_sharedMaterial: {fileID: -5266811138903163802, guid: 0828fda3c5607c34494810f2bf2bec5a,

@@ -51,8 +51,6 @@ public class UIManager : MonoBehaviour
     public void ShowVictoryScreen()
     {
 
-        Debug.Log("Victory!");
-
         //Para que deje de calcular la caida de los personajes
         foreach (GameObject player in MultiplayerManager.Instance.players) {
             player.SetActive(false);
@@ -81,7 +79,7 @@ public class UIManager : MonoBehaviour
         if (segundos >= 10) leveltime = minutos + ":" + segundos;                    //Si los segundos son mayores o iguales que 10, concatenamos y construimos el texto
         else leveltime = minutos + ":" + "0" + segundos;
 
-        vicScreenTimeResultText.text = "It took you " + leveltime + "!";
+        vicScreenTimeResultText.text = "¡En un tiempo de: " + leveltime + "!";
 
         //Hacemos el tiempo visible, finalmente
         vicScreenTimeResultText.transform.parent.gameObject.SetActive(true);
@@ -127,7 +125,7 @@ public class UIManager : MonoBehaviour
 
         playerImage.sprite = readySprites[number];
         int playernumber = number + 1;
-        playerText.text = "Player " + playernumber  + " ready!";
+        playerText.text = "¡Jugador " + playernumber  + " listo!";
 
         if (number +1 >= GameManager.Instance.requiredPlayers)
         {
