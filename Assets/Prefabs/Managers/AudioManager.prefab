@@ -46,7 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BGMsource: {fileID: 8461215132833723797}
-  BGMVolume: 1
+  BGMVolume: 0.85
+  VictoryVolume: 0.85
   SFXVolume: 1
   SolvingBGM: {fileID: 8300000, guid: 4a0de2156395d0f40a8cd2022fcc0e7b, type: 3}
   OpenDoorsBGM: {fileID: 8300000, guid: b1149f4af1ed70e49b54af1e7b7027de, type: 3}

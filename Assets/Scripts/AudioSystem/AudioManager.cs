@@ -10,7 +10,9 @@ public class AudioManager : MonoBehaviour
 
     public AudioSource BGMsource;
 
-    public float BGMVolume = 1.0f;
+    public float BGMVolume = 0.85f;
+
+    public float VictoryVolume = 0.85f;
 
     public float SFXVolume = 1.0f;
 
@@ -50,6 +52,7 @@ public class AudioManager : MonoBehaviour
     public void PlayVictoryMusic()
     {
         BGMsource.clip = VictoryBGM;
+        BGMsource.volume = VictoryVolume;
         BGMsource.Play();
     }
 
