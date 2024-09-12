@@ -70,9 +70,39 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 2115d909b42b6f14fba8009ca2c964b5, type: 2}
     - target: {fileID: -7511558181221131132, guid: 7e29fd2fa7ae94347ad4a58a5bb62990,
         type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 50affb7f477887f4ca14a888a1e49e62, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 7e29fd2fa7ae94347ad4a58a5bb62990,
+        type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8d9c474789b456f4d9fbdb8770082531, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 7e29fd2fa7ae94347ad4a58a5bb62990,
+        type: 3}
+      propertyPath: m_Materials.Array.data[5]
+      value: 
+      objectReference: {fileID: 2100000, guid: d26e882f9e8077a4b9d1f7e7cc585a91, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 7e29fd2fa7ae94347ad4a58a5bb62990,
+        type: 3}
+      propertyPath: m_Materials.Array.data[6]
+      value: 
+      objectReference: {fileID: 2100000, guid: e325e90990073bc4d81a165cdca4b58c, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 7e29fd2fa7ae94347ad4a58a5bb62990,
+        type: 3}
+      propertyPath: m_Materials.Array.data[7]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4f74f011423b17e4f85c22c5dca3953c, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 7e29fd2fa7ae94347ad4a58a5bb62990,
+        type: 3}
       propertyPath: m_Materials.Array.data[8]
       value: 
       objectReference: {fileID: 2100000, guid: 4b4e2aef58e202841bc6aee415c18d37, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 7e29fd2fa7ae94347ad4a58a5bb62990,
+        type: 3}
+      propertyPath: m_Materials.Array.data[9]
+      value: 
+      objectReference: {fileID: 2100000, guid: ffd5b8a4bc9c0a2458c13337ae6096c5, type: 2}
     - target: {fileID: 919132149155446097, guid: 7e29fd2fa7ae94347ad4a58a5bb62990,
         type: 3}
       propertyPath: m_Name
