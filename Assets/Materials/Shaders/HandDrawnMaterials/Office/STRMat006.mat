@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: OfficeWallFloor
+  m_Name: STRMat006
   m_Shader: {fileID: -6465566751694194690, guid: da3822da1fbd96949956a5640c1fab31,
     type: 3}
   m_Parent: {fileID: 0}
@@ -25,7 +25,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _DrawingTexture:
-        m_Texture: {fileID: 2800000, guid: 8cfc6392500a24c42876204fb43f89b0, type: 3}
+        m_Texture: {fileID: 2800000, guid: c2b0b510d498a4c4eb123fc05a63f3df, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _mainTexture:
@@ -46,13 +46,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _DrwaingStr: 0.35
+    - _DrwaingStr: 1.11
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _SmudgeStr: 0.01
+    - _SmudgeStr: 0.002
     - _Speed: 2.5
     m_Colors:
-    - _Color: {r: 0.5208259, g: 0.7360348, b: 0.8301887, a: 0}
+    - _Color: {r: 0.23584908, g: 0.2062668, b: 0.19246174, a: 0}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
     - _Timing: {r: 15, g: 15, b: 0, a: 0}
   m_BuildTextureStacks: []
