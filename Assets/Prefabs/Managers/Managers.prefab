@@ -63,27 +63,31 @@ MonoBehaviour:
   - {fileID: -8274133419916619345, guid: 39534e60d477ef341b753932db27e416, type: 3}
   - {fileID: -6478536213147159724, guid: 39534e60d477ef341b753932db27e416, type: 3}
   - {fileID: -2813467912831258332, guid: 39534e60d477ef341b753932db27e416, type: 3}
-  - {fileID: 6699446615349125189, guid: 39534e60d477ef341b753932db27e416, type: 3}
+  - {fileID: 2100000, guid: 67de6fd63d7d0434385ffc8c2ed6dcfc, type: 2}
+  - {fileID: 2100000, guid: ffd5b8a4bc9c0a2458c13337ae6096c5, type: 2}
   p2Materials:
   - {fileID: 880774007180850119, guid: c9867c58218e4774cb340883b184c9b6, type: 3}
   - {fileID: -3522955778539423533, guid: 9bc4883fc6361444890395df07e191fc, type: 3}
   - {fileID: -8274133419916619345, guid: 9bc4883fc6361444890395df07e191fc, type: 3}
   - {fileID: 6699446615349125189, guid: 9bc4883fc6361444890395df07e191fc, type: 3}
-  - {fileID: 4874126678125670354, guid: 9bc4883fc6361444890395df07e191fc, type: 3}
+  - {fileID: 2100000, guid: 8385a9e939750ad4eafceeb067848e5a, type: 2}
+  - {fileID: 2100000, guid: ffd5b8a4bc9c0a2458c13337ae6096c5, type: 2}
   p3Materials:
   - {fileID: -3522955778539423533, guid: 6e6b3c376d5212243b68bae49eb8cb98, type: 3}
   - {fileID: -8274133419916619345, guid: 6e6b3c376d5212243b68bae49eb8cb98, type: 3}
   - {fileID: 1886820026795636259, guid: 6e6b3c376d5212243b68bae49eb8cb98, type: 3}
   - {fileID: -6087771358165109452, guid: 6e6b3c376d5212243b68bae49eb8cb98, type: 3}
   - {fileID: 4874126678125670354, guid: 6e6b3c376d5212243b68bae49eb8cb98, type: 3}
-  - {fileID: 880774007180850119, guid: 6e6b3c376d5212243b68bae49eb8cb98, type: 3}
+  - {fileID: 2100000, guid: 4119aed8a20fa5b4289076e75bc0137e, type: 2}
+  - {fileID: 2100000, guid: ffd5b8a4bc9c0a2458c13337ae6096c5, type: 2}
   p4Materials:
   - {fileID: -3522955778539423533, guid: 7431222eb03ad2b4ab29a35ceb4a7286, type: 3}
-  - {fileID: 1886820026795636259, guid: 7431222eb03ad2b4ab29a35ceb4a7286, type: 3}
+  - {fileID: 2100000, guid: 528303ebfc5afa048a1288e233470d5a, type: 2}
   - {fileID: 4874126678125670354, guid: 7431222eb03ad2b4ab29a35ceb4a7286, type: 3}
   - {fileID: 6699446615349125189, guid: 7431222eb03ad2b4ab29a35ceb4a7286, type: 3}
   - {fileID: -3846018093981099296, guid: 7431222eb03ad2b4ab29a35ceb4a7286, type: 3}
   - {fileID: -8274133419916619345, guid: 7431222eb03ad2b4ab29a35ceb4a7286, type: 3}
+  - {fileID: 2100000, guid: ffd5b8a4bc9c0a2458c13337ae6096c5, type: 2}
 --- !u!114 &6883103928228858501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,7 +233,10 @@ MonoBehaviour:
   scapedChars: 0
   requiredPlayers: 4
   playingLevel: 1
+  alarmsActive: 0
   winningCamPosition: {fileID: 0}
+  AlarmLight: {fileID: 0}
+  OpenDoorsParticles: {fileID: 0}
 --- !u!114 &4942218801491531370
 MonoBehaviour:
   m_ObjectHideFlags: 0

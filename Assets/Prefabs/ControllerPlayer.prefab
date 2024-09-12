@@ -5068,7 +5068,8 @@ MeshRenderer:
   - {fileID: -8274133419916619345, guid: 39534e60d477ef341b753932db27e416, type: 3}
   - {fileID: -6478536213147159724, guid: 39534e60d477ef341b753932db27e416, type: 3}
   - {fileID: -2813467912831258332, guid: 39534e60d477ef341b753932db27e416, type: 3}
-  - {fileID: 6699446615349125189, guid: 39534e60d477ef341b753932db27e416, type: 3}
+  - {fileID: 2100000, guid: 67de6fd63d7d0434385ffc8c2ed6dcfc, type: 2}
+  - {fileID: 2100000, guid: ffd5b8a4bc9c0a2458c13337ae6096c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5297,6 +5298,8 @@ MonoBehaviour:
   isOutlineActive: 0
   outlineMaterial: {fileID: 2100000, guid: f7b010bac27ab6848803b92232bd401d, type: 2}
   playerCollission: {fileID: 1733484457512458075}
+  flag: 0
+  lastFlag: 0
 --- !u!114 &1733484457512458075
 MonoBehaviour:
   m_ObjectHideFlags: 0
