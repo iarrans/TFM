@@ -8,47 +8,47 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bordes
-    second: {fileID: 2100000, guid: e6046e7fac605dd4c94dc87de3b85829, type: 2}
+    second: {fileID: 2100000, guid: 9a377538f2b51854fbc0735bfcf2a1f5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: BordesGato
-    second: {fileID: 2100000, guid: 2772ed19686e1ea4aa66de0387f530bc, type: 2}
+    second: {fileID: 2100000, guid: 87f92563db00a0d469f55d731676c950, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: CajaGato
-    second: {fileID: 2100000, guid: 65fb2219479057c409d1837c033f17b6, type: 2}
+    second: {fileID: 2100000, guid: 2136e991cd8ada0419540f89e0ad6592, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: ColaGato
-    second: {fileID: 2100000, guid: 47b78ebccc3939c438079d801c0432bc, type: 2}
+    second: {fileID: 2100000, guid: 4ed9abbe85bb0724788675e3e4609939, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: CuerpoGato
-    second: {fileID: 2100000, guid: f7517173676d3cc44ac26901235292df, type: 2}
+    second: {fileID: 2100000, guid: 2e36200404e4962489ca925102998ad7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.006
-    second: {fileID: 2100000, guid: c09fa29795188c443910c74715c4ec70, type: 2}
+    second: {fileID: 2100000, guid: 316d79c0e60b1d54d8ee86d6e2d0bfd7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.011
-    second: {fileID: 2100000, guid: 78e9a9045a0101e41b3886a7c965a94c, type: 2}
+    second: {fileID: 2100000, guid: a141779a560bd6147802348980db74a6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.021
-    second: {fileID: 2100000, guid: 442a9c0fb81986f4bb1b8dff1f4c4644, type: 2}
+    second: {fileID: 2100000, guid: 2220acf563a0bb540963c5f2796c4d8f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: PEZ
-    second: {fileID: 2100000, guid: a034b6a7b681eb74fbefc180bce23e0a, type: 2}
+    second: {fileID: 2100000, guid: 7d18c008bbebf0c40b7ef6f9315239ca, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
