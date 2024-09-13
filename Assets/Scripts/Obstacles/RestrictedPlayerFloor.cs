@@ -8,8 +8,8 @@ public class RestrictedPlayerFloor : MonoBehaviour
     
     public GameObject floor;
     public List<GameObject> floorBarriers;
-    public Material emptyFloorMaterial;
-    public Material fullFloorMaterial;
+    public List<Material> playersLeftMaterials;
+
     //public int defaultyer;
     //public int restrictedFloorLayer;
 
@@ -23,6 +23,7 @@ public class RestrictedPlayerFloor : MonoBehaviour
         //defaultyer = LayerMask.NameToLayer("Default");
         //restrictedFloorLayer = LayerMask.NameToLayer("RestrictedFloorPlayer");
         playersStanding = 0;
+        transform.GetComponent<Renderer>().material = playersLeftMaterials[playerLimit - playersStanding];
     }
     public void OnTriggerEnter(Collider collision)
     {
@@ -36,31 +37,14 @@ public class RestrictedPlayerFloor : MonoBehaviour
                     barrier.SetActive(true);
                 }
                 AudioManager.instance.PlaySFXClip(fullFloorSFX);
-                transform.GetComponent<Renderer>().material = fullFloorMaterial;
+                transform.GetComponent<Renderer>().material = playersLeftMaterials[0];
+            }
+            else
+            {
+                transform.GetComponent<Renderer>().material = playersLeftMaterials[playerLimit - playersStanding];
+                AudioManager.instance.PlaySFXClip(fullFloorSFX);
             }
         }
-        /*Debug.Log("A");
-                    if (playersStanding.Count < playerLimit)
-                    {
-                        if (collision.transform.parent != null)
-                        {
-                            playersStanding.Add(collision.gameObject);
-                            collision.transform.parent.gameObject.layer = restrictedFloorLayer;
-                            collision.transform.gameObject.layer = restrictedFloorLayer;
-                        }
-                        else
-                        {
-                            playersStanding.Add(collision.transform.gameObject);
-                            collision.transform.gameObject.layer = restrictedFloorLayer;
-                        }
-
-                    }
-                    if (playersStanding.Count >= playerLimit)
-                    {
-                        transform.parent.GetComponent<Renderer>().material = fullFloorMaterial;
-                        AudioManager.instance.PlaySFXClip(fullFloorSFX);
-                    }*/
-
     }
 
     private void OnTriggerExit(Collider collision)
@@ -75,7 +59,7 @@ public class RestrictedPlayerFloor : MonoBehaviour
                     barrier.SetActive(false);
                 }
                 AudioManager.instance.PlaySFXClip(fullFloorSFX);
-                transform.GetComponent<Renderer>().material = emptyFloorMaterial;
+                transform.GetComponent<Renderer>().material = playersLeftMaterials[playerLimit-playersStanding];
             }
 
             /*if (collision.transform.parent != null)
