@@ -487,7 +487,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6a39e50a16d8fe848ae0a8683a2abf4b, type: 2}
+  - {fileID: 2100000, guid: 8b078b3d008dd784895fff86aa76dfda, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -549,7 +549,7 @@ MonoBehaviour:
   - {fileID: 4606403729351869923}
   - {fileID: 5577284323392862163}
   - {fileID: 201511185253683276}
-  emptyFloorMaterial: {fileID: 2100000, guid: 6a39e50a16d8fe848ae0a8683a2abf4b, type: 2}
-  fullFloorMaterial: {fileID: 2100000, guid: 22a178b17b3ba8d499a1b1895ca8adda, type: 2}
+  emptyFloorMaterial: {fileID: 2100000, guid: 9b3a78027979a6c428a8c58822725587, type: 2}
+  fullFloorMaterial: {fileID: 2100000, guid: 74fff8995e3736245a813b037a2f1061, type: 2}
   playerLimit: 1
   fullFloorSFX: {fileID: 8300000, guid: d7bdd97cc485632408f2fbcde1bab894, type: 3}
