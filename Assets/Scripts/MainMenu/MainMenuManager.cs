@@ -13,6 +13,12 @@ public class MainMenuManager : MonoBehaviour
 
     [SerializeField] AudioClip buttonSound;
 
+    private void Start()
+    {
+        MainUtils.BGMVolume = bgmSlider.value;
+        MainUtils.SFXVolume = sfxSlider.value;
+    }
+
     public void MoveToScene(int scene)
     {
         SceneManager.LoadScene(scene);

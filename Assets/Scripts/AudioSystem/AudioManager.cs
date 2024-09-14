@@ -12,7 +12,7 @@ public class AudioManager : MonoBehaviour
 
     public float BGMVolume = 0.85f;
 
-    public float VictoryVolume = 0.85f;
+    public float VictoryVolume = 0.45f;
 
     public float SFXVolume = 1.0f;
 
