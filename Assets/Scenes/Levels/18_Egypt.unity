@@ -209,22 +209,37 @@ PrefabInstance:
     - target: {fileID: 8488929269954287975, guid: df6084f13a152b644a55a83712b0f730,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.2741382
+      value: 8.828569
       objectReference: {fileID: 0}
     - target: {fileID: 8488929269954287975, guid: df6084f13a152b644a55a83712b0f730,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.0479076
+      value: 1.039318
       objectReference: {fileID: 0}
     - target: {fileID: 8488929269954287975, guid: df6084f13a152b644a55a83712b0f730,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.00716
+      value: -0.002870085
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488929269954287975, guid: df6084f13a152b644a55a83712b0f730,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.5180006
       objectReference: {fileID: 0}
     - target: {fileID: 8488929269954287975, guid: df6084f13a152b644a55a83712b0f730,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.4493
+      value: 0.44930008
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488929269954287975, guid: df6084f13a152b644a55a83712b0f730,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488929269954287975, guid: df6084f13a152b644a55a83712b0f730,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8682294706769104106, guid: df6084f13a152b644a55a83712b0f730,
         type: 3}
@@ -794,12 +809,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
---- !u!1 &475282958 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 479102257119357928, guid: c3686a6783f66cd4bb165e831c69ae8a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1482103683}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &513182433 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3534642737032960435, guid: c3686a6783f66cd4bb165e831c69ae8a,
@@ -817,7 +826,7 @@ PrefabInstance:
     - target: {fileID: 801770810866083359, guid: 84a91bf12d61be843b9c5873b5e8a50e,
         type: 3}
       propertyPath: m_Name
-      value: MovableObstacle (1)
+      value: PointerPos
       objectReference: {fileID: 0}
     - target: {fileID: 1619041909896507654, guid: 84a91bf12d61be843b9c5873b5e8a50e,
         type: 3}
@@ -852,7 +861,7 @@ PrefabInstance:
     - target: {fileID: 6507632094044058007, guid: 84a91bf12d61be843b9c5873b5e8a50e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.09
+      value: -10.71
       objectReference: {fileID: 0}
     - target: {fileID: 6507632094044058007, guid: 84a91bf12d61be843b9c5873b5e8a50e,
         type: 3}
@@ -2054,7 +2063,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OpenDoorsParticles
       value: 
-      objectReference: {fileID: 475282958}
+      objectReference: {fileID: 0}
     - target: {fileID: 2885516415068811407, guid: a12a2a631b776ef4ca0874b1de648c66,
         type: 3}
       propertyPath: winningCamPosition
