@@ -3,7 +3,17 @@ guid: 71886ac604fd3324eb9752a33f4ca032
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eladrillos
+    second: {fileID: 2100000, guid: 420110a9bd365db47bae28bfec21d3d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: botonE
+    second: {fileID: 2100000, guid: 8d53fbb946e1f354ca659dd9f06630ac, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
