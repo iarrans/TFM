@@ -1619,7 +1619,7 @@ PrefabInstance:
     - target: {fileID: 2885516415068811407, guid: a12a2a631b776ef4ca0874b1de648c66,
         type: 3}
       propertyPath: requiredPlayers
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2885516415068811407, guid: a12a2a631b776ef4ca0874b1de648c66,
         type: 3}
@@ -1678,7 +1678,7 @@ PrefabInstance:
     - target: {fileID: 436601251269590580, guid: 29d6b957d39447f4292c7108cffc929e,
         type: 3}
       propertyPath: playerHitCounterNeeded
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5147164902787154667, guid: 29d6b957d39447f4292c7108cffc929e,
         type: 3}
