@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1463,6 +1463,31 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1476253470882693270, guid: df6084f13a152b644a55a83712b0f730,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.80491215
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476253470882693270, guid: df6084f13a152b644a55a83712b0f730,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.670982
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476253470882693270, guid: df6084f13a152b644a55a83712b0f730,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.08283
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476253470882693270, guid: df6084f13a152b644a55a83712b0f730,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476253470882693270, guid: df6084f13a152b644a55a83712b0f730,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.1291
+      objectReference: {fileID: 0}
     - target: {fileID: 2696057117073610736, guid: df6084f13a152b644a55a83712b0f730,
         type: 3}
       propertyPath: floorBarriers.Array.size
@@ -1506,7 +1531,7 @@ PrefabInstance:
     - target: {fileID: 5219217094216919947, guid: df6084f13a152b644a55a83712b0f730,
         type: 3}
       propertyPath: m_Size.z
-      value: 0.74886084
+      value: 0.7090344
       objectReference: {fileID: 0}
     - target: {fileID: 5219217094216919947, guid: df6084f13a152b644a55a83712b0f730,
         type: 3}
@@ -1521,7 +1546,7 @@ PrefabInstance:
     - target: {fileID: 5219217094216919947, guid: df6084f13a152b644a55a83712b0f730,
         type: 3}
       propertyPath: m_Center.z
-      value: -0.21374092
+      value: -0.13409111
       objectReference: {fileID: 0}
     - target: {fileID: 5500658188885756419, guid: df6084f13a152b644a55a83712b0f730,
         type: 3}
@@ -1601,7 +1626,7 @@ PrefabInstance:
     - target: {fileID: 8682294706769104106, guid: df6084f13a152b644a55a83712b0f730,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 3
+      value: 3.6378
       objectReference: {fileID: 0}
     - target: {fileID: 8682294706769104106, guid: df6084f13a152b644a55a83712b0f730,
         type: 3}
@@ -1616,7 +1641,7 @@ PrefabInstance:
     - target: {fileID: 8682294706769104106, guid: df6084f13a152b644a55a83712b0f730,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.5926723
+      value: -6.9115
       objectReference: {fileID: 0}
     - target: {fileID: 8682294706769104106, guid: df6084f13a152b644a55a83712b0f730,
         type: 3}

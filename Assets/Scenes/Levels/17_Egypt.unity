@@ -1248,6 +1248,31 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1476253470882693270, guid: df6084f13a152b644a55a83712b0f730,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.77440286
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476253470882693270, guid: df6084f13a152b644a55a83712b0f730,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0161936
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476253470882693270, guid: df6084f13a152b644a55a83712b0f730,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.12582
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476253470882693270, guid: df6084f13a152b644a55a83712b0f730,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476253470882693270, guid: df6084f13a152b644a55a83712b0f730,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00153
+      objectReference: {fileID: 0}
     - target: {fileID: 2091172935842441363, guid: df6084f13a152b644a55a83712b0f730,
         type: 3}
       propertyPath: numberOfPlayers

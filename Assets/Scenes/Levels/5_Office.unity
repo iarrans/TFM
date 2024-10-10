@@ -1020,6 +1020,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1476253470882693270, guid: df6084f13a152b644a55a83712b0f730,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.97236705
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476253470882693270, guid: df6084f13a152b644a55a83712b0f730,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7073726
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476253470882693270, guid: df6084f13a152b644a55a83712b0f730,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.00716
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476253470882693270, guid: df6084f13a152b644a55a83712b0f730,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.1473
+      objectReference: {fileID: 0}
     - target: {fileID: 2696057117073610736, guid: df6084f13a152b644a55a83712b0f730,
         type: 3}
       propertyPath: playerLimit
