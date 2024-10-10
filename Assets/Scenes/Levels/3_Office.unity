@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1156,6 +1156,26 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[12]
       value: 
       objectReference: {fileID: 2100000, guid: cde9ba53eb80b0a40a74f28b7ef15a15, type: 2}
+    - target: {fileID: 5334626404887943210, guid: c3686a6783f66cd4bb165e831c69ae8a,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.05239021
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334626404887943210, guid: c3686a6783f66cd4bb165e831c69ae8a,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.0000000019609852
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334626404887943210, guid: c3686a6783f66cd4bb165e831c69ae8a,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.016195066
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334626404887943210, guid: c3686a6783f66cd4bb165e831c69ae8a,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.0000000011008099
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
