@@ -335,8 +335,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.025246968, y: 0.0041976157, z: 0.021869969}
-  m_Center: {x: 0, y: -0.0000000037252903, z: -9.313224e-10}
+  m_Size: {x: 0.02884521, y: 0.007667616, z: 0.023923079}
+  m_Center: {x: 0.00018291711, y: 0.00062613905, z: 0.000095183845}
 --- !u!1001 &5001825378046668097
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -418,10 +418,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 5326718155087940979}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 66447cd3ce899794584f0d4b0f806b2a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2099327631491730165}
   m_SourcePrefab: {fileID: 100100000, guid: 66447cd3ce899794584f0d4b0f806b2a, type: 3}
 --- !u!4 &4819050420854590122 stripped
 Transform:
@@ -454,30 +450,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.006974592, y: 0.123082325, z: 0.03896536}
-  m_Center: {x: 0.000000004773028, y: 0, z: -9.313224e-10}
---- !u!64 &2099327631491730165
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5308447085950685200}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1991193399338924143, guid: 66447cd3ce899794584f0d4b0f806b2a, type: 3}
+  m_Size: {x: 0.006349291, y: 0.123082325, z: 0.038965363}
+  m_Center: {x: 0.0003126535, y: -6.868908e-21, z: -0.0000000011920929}
 --- !u!1001 &6008069605395996485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -837,8 +811,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.006974592, y: 0.123082325, z: 0.03896536}
-  m_Center: {x: 0.000000004773028, y: 0, z: -9.313224e-10}
+  m_Size: {x: 0.0055365167, y: 0.123082325, z: 0.03896536}
+  m_Center: {x: 0.0007190412, y: 4.764559e-24, z: -0.0000000011920929}
 --- !u!64 &5441733764830734959
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -856,7 +830,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
