@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Levelscene: 4
   levelName: Office 2
-  levelMiniature: {fileID: 21300000, guid: 22263280bffa943479b69f3550a34cca, type: 3}
+  levelMiniature: {fileID: 21300000, guid: 30d4526dfb8275a4fb86eb6567c32187, type: 3}

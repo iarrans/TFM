@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Levelscene: 18
   levelName: Egypt 2
-  levelMiniature: {fileID: 21300000, guid: aa0b1bca81115d74095751e1235cd5a3, type: 3}
+  levelMiniature: {fileID: 21300000, guid: 3825589a2928ff442b1ae8934596ff39, type: 3}

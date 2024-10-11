@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Levelscene: 12
   levelName: Jail 3
-  levelMiniature: {fileID: 21300000, guid: 3158f0494308f9d4dbe43e9af729da9c, type: 3}
+  levelMiniature: {fileID: 21300000, guid: 650ed5102b3b8d34da558b0dee686a91, type: 3}
