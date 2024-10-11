@@ -1984,7 +1984,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Proyecto tutorizado por: \nRafael Garrido and Xavier Adrados"
+  m_text: "Proyecto tutorizado por: \nRafael Garrido y Xavier Adrados"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0828fda3c5607c34494810f2bf2bec5a, type: 2}
   m_sharedMaterial: {fileID: -5266811138903163802, guid: 0828fda3c5607c34494810f2bf2bec5a,
