@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2512,7 +2512,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Agradecimiento a nuestros testers: \nOlinkmar, cakudev, nerewolfart, zafirity,
-    quilloprods, lakkion and blaster"
+    quilloprods, lakkion y blaster"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0828fda3c5607c34494810f2bf2bec5a, type: 2}
   m_sharedMaterial: {fileID: -5266811138903163802, guid: 0828fda3c5607c34494810f2bf2bec5a,
@@ -2647,7 +2647,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Equipo: \nIsabel Arrans, El\xEDas Calero and Beatriz Llamas"
+  m_text: "Equipo: \nIsabel Arrans, El\xEDas Calero y Beatriz Llamas"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0828fda3c5607c34494810f2bf2bec5a, type: 2}
   m_sharedMaterial: {fileID: -5266811138903163802, guid: 0828fda3c5607c34494810f2bf2bec5a,
@@ -2893,7 +2893,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 27, y: -40}
+  m_AnchoredPosition: {x: 27, y: -6.899994}
   m_SizeDelta: {x: 228.6856, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &705880361
