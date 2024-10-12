@@ -11,6 +11,7 @@ TagManager:
   - ExitTrigger
   - PushableObstacle
   - Wall
+  - OutOfBounds
   layers:
   - Default
   - TransparentFX

@@ -26,6 +26,8 @@ public class PlayerCollissions : MonoBehaviour
     public bool flag;
     public bool lastFlag;
 
+    public AudioClip respawnSound;
+
 
     public bool IsCollisioning { get { if (wallsCollissioned > 0) return true; return false; }  }
 
@@ -75,6 +77,12 @@ public class PlayerCollissions : MonoBehaviour
         if (other.CompareTag("ExitTrigger"))
         {
             GameManager.Instance.CheckScaped();
+            transform.gameObject.SetActive(false);
+        }
+        else if (other.CompareTag("OutOfBounds"))
+        {
+            transform.position = MultiplayerManager.Instance.spawnPositions[0].position;
+            AudioManager.instance.PlaySFXClip(respawnSound);
         }
     }
 

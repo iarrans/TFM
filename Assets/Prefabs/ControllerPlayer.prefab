@@ -5301,6 +5301,7 @@ MonoBehaviour:
   playerCollission: {fileID: 1733484457512458075}
   flag: 0
   lastFlag: 0
+  respawnSound: {fileID: 8300000, guid: fbbb9adae9b624843875458ae45d2707, type: 3}
 --- !u!114 &1733484457512458075
 MonoBehaviour:
   m_ObjectHideFlags: 0
