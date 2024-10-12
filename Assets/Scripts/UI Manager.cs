@@ -79,7 +79,7 @@ public class UIManager : MonoBehaviour
         if (segundos >= 10) leveltime = minutos + ":" + segundos;                    //Si los segundos son mayores o iguales que 10, concatenamos y construimos el texto
         else leveltime = minutos + ":" + "0" + segundos;
 
-        vicScreenTimeResultText.text = "¡En un tiempo de: " + leveltime + "!";
+        vicScreenTimeResultText.text = "¡En un tiempo de " + leveltime + "!";
 
         //Hacemos el tiempo visible, finalmente
         vicScreenTimeResultText.transform.parent.gameObject.SetActive(true);

@@ -19,7 +19,7 @@ public class DoorLightReceptor : MonoBehaviour
 
     void TryOpenDoor()
     {
-        if(playerHitCounter >= playerHitCounterNeeded){
+        if(playerHitCounter >= playerHitCounterNeeded && !doorOpened){
             door.SetActive(false);
             doorOpened = true;
             AudioManager.instance.PlaySFXClip(doorOpeningSound);
